@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#bigbox {
+  display: flex;
+}
+
+.picture {
+  opacity: 0.5;
+}
+.picture:hover {
+  opacity: 1;
+}
+.box1 {
+  background-color: aqua;
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+  padding: 10px 10px;
+}
+.box1:hover {
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+}
+
+.box1 p,
+h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.box2 {
+  background-color: aqua;
+  width: 600px;
+  height: 400px;
+  border: 2px solid black;
+  padding: 10px 10px;
+}
+
+.box2:hover {
+  background-color: coral;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
