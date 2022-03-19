@@ -1,0 +1,35 @@
+.item {
+  background: gray;
+  border: #ccc solid 1px;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  flex: 1;
+  margin: 0.7rem;
+  /* browseriin tsonhni hemjeetei ijilhen duurgehin husdeg terig ni flex:1 hiine */
+}
+
+.item1 {
+  background: gray;
+  border: #ccc solid 1px;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  flex: 1;
+  /* browseriin tsonhni hemjeetei ijilhen duurgehin husdeg terig ni flex:1 hiine */
+}
+
+#container {
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+}
+/* flex-flow ni flex-direction,flex-wrap moriin negtgej towchilj bichdeg */
+/* wrap 1 morond olon elemet baiwal iluu garna iluu garsnig wrap ashiglan 
+tentsiilj boldog */
+
+.item1:first-child {
+  flex: 2;
+  /* ehnii item maani ih utgiig awna gesen ug sidebarig ingej hiij boldog */
+}

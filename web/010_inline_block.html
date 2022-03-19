@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inline and block</title>
+
+    <style>
+      /* default block elemetiig inline bolgoson */
+      li {
+        display: inline;
+      }
+      li a {
+        padding-right: 20px;
+      }
+
+      /*default inline elementiig block elemet bolgoh */
+      img {
+        margin: auto;
+        display: block;
+      }
+
+      /*  display:inline ajillajhuie */
+      .box {
+        display: inline-block;
+        background: coral;
+        padding: 20px;
+        margin-bottom: 15px;
+        width: 32%;
+        /* width ni 32 % baihad dotor ni padding 20px awahar niitde
+         100%-aasaa hetred ywaad b.gaa tul box-sizing awdag
+        */
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <!--<li>:list item ni block element um -->
+    <ul>
+      <li><a href="#">information</a></li>
+      <li><a href="#">business</a></li>
+      <li><a href="#">marketing</a></li>
+    </ul>
+    <br />
+    <br />
+
+    <!-- zurag bol inline elemet ym yagad gewel 
+        hoishoogo tsuwradag dooshoo tsuwrahig 
+        inline element gene  -->
+
+    <img src="0/1.jpg" alt="" / style="width: 20%;">
+
+    <br />
+    <br />
+    <!-- div bol inline element -->
+    <div class="box">
+      <h3>lorem1`</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
+        dignissimos animi iste sunt recusandae quaerat facilis quis temporibus
+        excepturi culpa!
+      </p>
+    </div>
+    <div class="box">
+      <h3>lorem1`</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
+        dignissimos animi iste sunt recusandae quaerat facilis quis temporibus
+        excepturi culpa!
+      </p>
+    </div>
+    <div class="box">
+      <h3>lorem1`</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
+        dignissimos animi iste sunt recusandae quaerat facilis quis temporibus
+        excepturi culpa!
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float and Alignment</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Courier New", Courier, monospace;
+        line-height: 1.4em;
+      }
+      .container {
+        /* width:960px gej bichij bolno teghdee ene ni utsan deer
+          ajillahgui zaawal scroll hiideg */
+        /* width: 960px; */
+
+        max-width: 960px;
+        /* max-width:960px bolgosnoor utas 
+        bolon tablet deer responsive bolno */
+
+        /* 30px gej bichij ogsnoor deerese bolon dooroso zai awna */
+        margin: 30px auto;
+        /* margin-auto ni 2 talasa ijil hemjeeni zai awna */
+      }
+      .box {
+        background: #f4f4f4;
+        border: 1px solid black;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+      .box p {
+        text-align: center;
+        text-align: justify;
+        /*text-align: justify ni baruun,
+         zuun talaasa yag ijilhen tegshildeg  */
+      }
+
+      #box-2 {
+        float: left;
+        width: 67%;
+      }
+      #box-3 {
+        float: right;
+        width: 30%;
+      }
+      /* clearfixiig ingej gargaj ogno ingesner deed talin boxruuga orohguie */
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box-1" class="box">
+        <h1>Lorem.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quasi
+          quas minima vero autem ducimus iure et. Doloremque, unde temporibus.
+        </p>
+      </div>
+
+      <div id="box-2" class="box">
+        <h1>Lorem.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quasi
+          quas minima vero autem ducimus iure et. Doloremque, unde temporibus.
+        </p>
+      </div>
+
+      <div id="box-3" class="box">
+        <h1>Lorem.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quasi
+          quas minima vero autem ducimus iure et. Doloremque, unde temporibus.
+        </p>
+      </div>
+      <div class="clear"></div>
+      <div id="box-4" class="box">
+        <h1>Lorem.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quasi
+          quas minima vero autem ducimus iure et. Doloremque, unde temporibus.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

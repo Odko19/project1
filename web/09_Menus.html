@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS menus</title>
+    <style>
+      boby {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+      /*  navbar style*/
+      .navbar {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background: #4c6ca0;
+        border-radius: 5px;
+
+        /* background baihgui bolson bailgahin tuld */
+        overflow: auto;
+      }
+      .navbar li {
+        float: left;
+      }
+
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+      }
+      .navbar li a:hover {
+        background-color: #0b192e;
+        color: red;
+      }
+      /* side menu style */
+      .side-menu {
+        /* urd talin tsegiig awahdaa list-style:none bichij ogno */
+        list-style: none;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        width: 300px;
+        padding: 20px;
+      }
+      .side-menu li {
+        font-size: 18px;
+        line-height: 2.4em;
+        border-bottom: dotted 1px #ddd;
+      }
+      /* tuhain elementiin hamgiin suulin elementiig 
+      songohdoo
+      .side-menu li:last-child {
+        border-bottom: none;
+      }
+      */
+      .side-menu li:last-child {
+        border-bottom: none;
+      }
+      .side-menu li a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      .side-menu li a:hover {
+        color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><a href="#">Ehlel</a></li>
+      <li><a href="#">bidni tuhai</a></li>
+      <li><a href="#">Butegdehun</a></li>
+      <li><a href="#">Holboo barih</a></li>
+    </ul>
+    <br />
+    <br />
+    <ul class="side-menu">
+      <li><a href="#">Ehlel</a></li>
+      <li><a href="#">bidni tuhai</a></li>
+      <li><a href="#">Butegdehun</a></li>
+      <li><a href="#">Holboo barih</a></li>
+    </ul>
+  </body>
+</html>

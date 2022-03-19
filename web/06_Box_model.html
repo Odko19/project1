@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model / Margin, Padding</title>
+    <style>
+        /* CSS deer default utguudig alga bolgodg comand baina */
+        /* CSS reset */
+        *{
+            margin: 0;
+            padding: 0;
+            /* box-sizing bichij ogsnoor tanii box 
+            width:600px dotro  padding:120px awna
+            ingesneer tani hemjee oorchlogdohguie
+            */
+            box-sizing: border-box;
+
+            /* 
+            padding nemeh toolond elementiin too ooorchlogdoj bolohguie
+            teriig hussen hemjeendee bailgahin tuld :
+
+            box-sizing: border-box;
+
+            ene mor codiig bichij ogdog
+             */
+        }
+        .box{
+            background-color: aqua;
+            border: 3px solid black;
+            width: 600px;
+            /* padding: 120px; */
+            padding: 10px 20px 30px 40px;
+            margin: 20px;
+        }
+        .box p{
+            margin-bottom: 0px;
+        }
+    </style>
+  </head>
+  <body>
+      <!-- display: block gedeg morigg buheld ni ezelne gesen ug -->
+    <div class="box">
+      <h3>lorem1</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero omnis
+        facilis earum magnam voluptatem? Velit delectus eveniet natus laborum
+        commodi?
+      </p>
+    </div>
+    <div class="box">
+      <h3>lorem2</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero omnis
+        facilis earum magnam voluptatem? Velit delectus eveniet natus laborum
+        commodi?
+      </p>
+    </div>
+    
+    </div>
+  </body>
+</html>
