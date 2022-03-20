@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto:ital,wght@0,100;0,400;0,500;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility */
+
+.text-primary {
+  color: green;
+}
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.btn1 {
+  display: inline-block;
+  color: white;
+  background: #333;
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  width: 100%;
+  margin-top: 2rem;
+}
+.btn {
+  display: inline-block;
+  color: white;
+  background: green;
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+  border: none;
+}
+.btn:hover {
+  background: #7ab436;
+}
+.container {
+  max-width: 1100px;
+  background: white;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.bg-primary {
+  background: green;
+  color: white;
+}
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+.list {
+  margin: 0.5rem;
+  list-style: none;
+}
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #444;
+}
+/* Цэс */
+
+#navbar {
+  display: flex;
+  background: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  z-index: 999;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: white;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: green;
+  border-radius: 5px;
+}
+
+/* showcase */
+
+#showcase {
+  background: #333 url(../image/showcase.jpg) no-repeat center center / cover;
+  height: 100vh;
+  color: white;
+}
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  /* bosoo tenhlegiin huwid center hiih bol zaawal ondor tawij ogoj heregtei */
+  height: 100%;
+  padding: 0 2rem;
+  /* Overlay - давхарлахь бүрэх */
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* <!-- Section = > bid yu hiideg we -- >  */
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  text-align: center;
+  flex: 1;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background: #7ab436;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Section => bid hen be  */
+
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+  /*  2 tenstuu hesegt huwaaj baina */
+}
+
+#who .who-img {
+  background: url(../image/people.jpg) no-repeat center center/cover;
+}
+
+/* <!-- Section =>clients manai tunshuud --> */
+
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+/* section : contact-form */
+#contact {
+  display: flex;
+}
+#contact .contact-form,
+#contact .map {
+  flex: 1;
+}
+
+.form-wrap,
+.form-group label {
+  display: block;
+  line-height: 2rem;
+}
+
+.form-wrap,
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-wrap p {
+  font-size: 0.85em;
+  line-height: normal;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
