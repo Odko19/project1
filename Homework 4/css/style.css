@@ -79,7 +79,7 @@ p {
 #navbar a {
   color: white;
 }
-#navbar h1 {
+#navbar .logo {
   float: left;
   padding-top: 20px;
 }
@@ -138,7 +138,7 @@ p {
 /* Hotel-info */
 
 #hotel-info {
-  height: 400px;
+  height: 450px;
 }
 
 #hotel-info .info-img {
