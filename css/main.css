@@ -14,7 +14,8 @@
 }
 .content {
   display: flex;
-  height: 496px;
+  height: 500px;
+  justify-content: space-between;
 }
 
 .content-image {
@@ -34,4 +35,133 @@
   z-index: 2;
   margin-top: 3vw;
   margin-left: -10vw;
+}
+
+.content .content-info {
+  display: flex;
+  align-items: center;
+}
+
+.content .content-info .content-text h2 {
+  font-size: 55px;
+  text-align: right;
+  color: #f17228;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+}
+
+.content .content-info .content-text p {
+  text-align: right;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  margin-top: 10px;
+}
+hr {
+  border: 1px solid #f17228;
+}
+/* more */
+
+.content-info .bullet .image4 {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-right: 10px;
+}
+
+/* slider */
+#container .image5 {
+  display: flex;
+  justify-content: center;
+}
+#container .image5 img {
+  margin-bottom: 36px;
+}
+
+/* Category Label => InfoPanel */
+
+#InfoPanel {
+  padding: 50px 0;
+  background: linear-gradient(
+    179.24deg,
+    #f17228 -90.18%,
+    rgba(255, 255, 255, 0) 31.19%
+  );
+}
+
+#InfoPanel .content-Panel {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  padding: 45px 100px;
+}
+
+#InfoPanel .content-Panel .panel {
+  display: flex;
+}
+
+#InfoPanel .content-Panel .panel .image6 {
+  background: #ffd7bf;
+  padding: 15px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+#InfoPanel .content-Panel .panel .panel-text {
+  align-self: center;
+}
+#InfoPanel .content-Panel .panel .panel-text h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+#InfoPanel .content-Panel .panel .panel-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/* Sale food */
+.content-Food {
+  width: auto;
+  height: 450px;
+}
+.content-Food .saleFood {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+.content-Food .saleFood h2 {
+  border-left: 10px solid #f17228;
+  align-self: center;
+}
+
+#btn {
+  background: #f17228;
+  width: 180px;
+  height: 100%;
+  padding: 15px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
+
+/* cardFood */
+.content-Food .cardFood {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.content-Food .cardFood .card {
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  padding: 15px 15px;
+}
+.content-Food .cardFood .card .image7 {
+  background: url(../image/3.jpg);
+  background-size: 100% 100%;
+  background-position: center;
 }
