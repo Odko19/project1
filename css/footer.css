@@ -26,9 +26,13 @@ footer {
   font-size: 16px;
   line-height: 24px;
 }
+.underline {
+  text-decoration-line: underline;
+  font-weight: 900;
+}
 .footerMenu a {
   color: white;
-  list-style: none;
+  text-decoration-line: none;
 }
 .socialFooder {
   display: flex;
@@ -65,6 +69,7 @@ p {
 
 .textFooder a {
   color: white;
+  text-decoration-line: none;
 }
 .iconFooder .icon {
   text-align: center;

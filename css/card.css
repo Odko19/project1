@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Dancing+Script:wght@700&family=Indie+Flower&family=Lobster&family=Poppins:ital,wght@0,200;1,300;1,600&family=Roboto:ital,wght@0,100;1,100&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Poppins:wght@600&family=Roboto:ital,wght@0,100;0,400;0,500;1,300&display=swap");
 /* Sale food */
 .content-Food {
   width: 100%;
@@ -12,6 +11,7 @@
 .content-Food .saleFood h2 {
   border-left: 10px solid #f17228;
   align-self: center;
+  font-family: "Poppins";
 }
 
 #btn {
@@ -64,7 +64,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   margin-top: 10px;
 }
