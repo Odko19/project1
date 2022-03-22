@@ -84,6 +84,10 @@
   width: 140px;
   justify-content: space-between;
 }
+.login-basket p {
+  margin-top: 5px;
+  margin-left: 5px;
+}
 /* basket */
 
 .basket {
