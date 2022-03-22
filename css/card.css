@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Dancing+Script:wght@700&family=Indie+Flower&family=Lobster&family=Poppins:ital,wght@0,200;1,300;1,600&family=Roboto:ital,wght@0,100;1,100&display=swap");
+
+/* Sale food */
+.content-Food {
+  width: 100%;
+  height: auto;
+}
+.content-Food .saleFood {
+  display: flex;
+  justify-content: space-between;
+}
+.content-Food .saleFood h2 {
+  border-left: 10px solid #f17228;
+  align-self: center;
+}
+
+#btn {
+  background: #f17228;
+  width: 180px;
+  height: 100%;
+  padding: 15px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
+#btn:active {
+  background-color: red;
+}
+/* cardFood */
+.cardFood {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  background: #fefefe;
+}
+
+.card {
+  height: auto;
+  width: 320px;
+  border-radius: 20px;
+  padding: 15px;
+  padding: 15px 15px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+#cardPic img {
+  width: 100%;
+}
+#cardPic p {
+  position: absolute;
+  display: flex;
+  margin-left: 225px;
+  background: #f17228;
+  padding: 12px 18px;
+  color: white;
+  border-radius: 0px 8px 0px 20px;
+}
+.cardCost {
+  padding: 0 15px;
+}
+.cardCost h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+.cardCost p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+.c1 {
+  color: #f17228;
+}
+.line {
+  text-decoration-line: line-through;
+}
