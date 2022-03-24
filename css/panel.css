@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* Category Label => InfoPanel */
+
+#InfoPanel {
+  padding: 50px 0;
+  background: linear-gradient(
+    179.24deg,
+    #f17228 -90.18%,
+    rgba(255, 255, 255, 0) 31.19%
+  );
+}
+
+.content-Panel {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  padding: 45px 100px;
+}
+
+.panel {
+  display: flex;
+}
+
+.image6 {
+  background: #ffd7bf;
+  padding: 15px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.panel-text {
+  align-self: center;
+}
+.panel-text h5 {
+  font-weight: 700;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+.panel-text p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}

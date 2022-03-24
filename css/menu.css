@@ -1,0 +1,21 @@
+.foodOption {
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+
+.food {
+  padding: 10px 40px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid #fbc5a6;
+  margin-left: 30px;
+}
+.food:first-child {
+  margin-left: 0;
+}
+
+.food:hover {
+  background: #f17228;
+  color: white;
+}
