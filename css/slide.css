@@ -10,10 +10,7 @@
 #bigcontent {
   background: url(../image/base.jpg) no-repeat center center/ cover;
 }
-#container {
-  max-width: 1440px;
-  margin: auto;
-}
+
 .content {
   display: flex;
   align-items: center;

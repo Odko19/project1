@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Poppins:wght@600&family=Roboto:ital,wght@0,100;0,400;0,500;1,300&display=swap");
+
 .foodOption {
   display: flex;
   box-sizing: border-box;
@@ -11,11 +13,37 @@
   border: 1px solid #fbc5a6;
   margin-left: 30px;
 }
+.food a {
+  text-decoration: none;
+  color: black;
+}
+
+.food:active {
+  background: #f17228;
+  color: white;
+}
+
 .food:first-child {
   margin-left: 0;
 }
 
-.food:hover {
-  background: #f17228;
-  color: white;
+/* Card padding */
+.cardFood1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  background: #fefefe;
+}
+
+.cardFood2 {
+  display: flex;
+  justify-content: flex-start;
+  padding: 16px 0;
+  background: #fefefe;
+}
+.cardFood2 .card {
+  margin-left: 26px;
+}
+.cardFood2 .card:first-child {
+  margin-left: 0px;
 }

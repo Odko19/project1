@@ -5,10 +5,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+header {
+  box-shadow: 0px 2px 4px rgba(241, 114, 40, 0.05);
+}
 /* Utility  */
 #container {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: auto;
   padding: 0 10px;
 }
@@ -50,7 +52,7 @@
   align-items: center;
 }
 
-.menu ul li {
+.menu ul li a {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0 20px;
@@ -58,7 +60,7 @@
   font-family: "Poppins";
 }
 
-#home .menu ul li p:hover {
+#home .menu ul li a:hover {
   color: #f17228;
 }
 
