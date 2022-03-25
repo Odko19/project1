@@ -54,7 +54,8 @@ label {
   text-transform: uppercase;
 }
 
-#btn:hover {
+#btn:hover,
+#btn.current {
   background: #f17228;
   color: white;
 }

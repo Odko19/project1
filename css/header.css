@@ -60,7 +60,8 @@ header {
   font-family: "Poppins";
 }
 
-#home .menu ul li a:hover {
+#home .menu ul li a:hover,
+.menu ul li a.current {
   color: #f17228;
 }
 

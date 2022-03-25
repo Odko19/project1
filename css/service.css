@@ -1,0 +1,20 @@
+.service {
+  margin-bottom: 50px;
+}
+.service h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  border-left: 15px solid #f17228;
+  padding: 0 10px;
+  margin: 33px 0;
+}
+.service p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}

@@ -4,10 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/forgetPass.css" />
+    <link rel="stylesheet" href="css/deliveryZone.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -21,9 +24,9 @@
           </div>
           <div class="menu">
             <ul>
-              <li><a href="#">Нүүр</a></li>
+              <li><a href="./index.html">Нүүр</a></li>
               <li><a href="./menu.html">Хоолны цэс</a></li>
-              <li><a>Хүргэлтийн бүс</a></li>
+              <li><a class="current" href="#">Хүргэлтийн бүс</a></li>
             </ul>
           </div>
           <div class="search-box">
@@ -43,41 +46,73 @@
               <div class="image2">
                 <img src="./image/logo/user icon.svg" alt="" />
               </div>
-              <p class="c1">Нэвтрэх</p>
+              <p class="c1"><a href="./login.html"> Нэвтрэх</a></p>
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Section => login -->
     <section>
       <div id="container">
-        <div class="loginFirst">
-          <h3>Нууц үг сэргээх</h3>
-          <form action="">
-            <div class="form-group">
-              <label for="email">И-мэйл</label>
-              <input
-                type="email"
-                id="email"
-                placeholder=" И-мэйл хаягаа оруулна уу. "
-              />
+        <div class="deliveryZone">
+          <div class="zoneTitle">
+            <img src="./image/map.jpg" alt="" />
+            <h4>Хүргэлтийн бүс дэх хаягууд</h4>
+          </div>
+          <div class="zoneAddress">
+            <div class="zone">
+              <div>
+                <h4>“А” бүс</h4>
+              </div>
+              <div>
+                <p>Нархан хотхон</p>
+                <p>26-р байр</p>
+                <p>Хоймор хотхон</p>
+                <p>45-р байр</p>
+                <p>44-р байр</p>
+                <p>3-р байр</p>
+                <p>Хоймор хотхон</p>
+                <p>45-р байр</p>
+              </div>
+              <div>
+                <p>Нархан хотхон</p>
+                <p>26-р байр</p>
+                <p>Хоймор хотхон</p>
+                <p>45-р байр</p>
+                <p>44-р байр</p>
+                <p>3-р байр</p>
+                <p>Хоймор хотхон</p>
+                <p>45-р байр</p>
+              </div>
             </div>
-
-            <!-- btn -->
-
-            <div class="form-group top">
-              <a href="forgetPass1.html">
-                <input
-                  type="button"
-                  id="btn"
-                  value="Үргэлжлүүлэх "
-                  class="current"
-                />
-              </a>
+            <div class="zone">
+                <div>
+                  <h4>“Б” бүс</h4>
+                </div>
+                <div>
+                  <p>Нархан хотхон</p>
+                  <p>26-р байр</p>
+                  <p>Хоймор хотхон</p>
+                  <p>45-р байр</p>
+                  <p>44-р байр</p>
+                  <p>3-р байр</p>
+                  <p>Хоймор хотхон</p>
+                  <p>45-р байр</p>
+                </div>
+                <div>
+                  <p>Нархан хотхон</p>
+                  <p>26-р байр</p>
+                  <p>Хоймор хотхон</p>
+                  <p>45-р байр</p>
+                  <p>44-р байр</p>
+                  <p>3-р байр</p>
+                  <p>Хоймор хотхон</p>
+                  <p>45-р байр</p>
+                </div>
+              </div>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </section>
@@ -120,8 +155,8 @@
             </div>
           </div>
           <div class="textFooder">
-            <p><a href="">Үйлчилгээний нөхцөл</a></p>
-            <p><a href=""> Нууцлалын бодлого</a></p>
+            <p><a href="./service.html">Үйлчилгээний нөхцөл</a></p>
+            <p><a href="./security.html"> Нууцлалын бодлого</a></p>
             <p>
               <a href="">
                 © 2020 MStars Foods LLC <br />
