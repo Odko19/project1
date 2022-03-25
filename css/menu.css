@@ -4,8 +4,12 @@
   display: flex;
   box-sizing: border-box;
   padding: 20px 0;
+  height: 88px;
+  align-items: center;
 }
-
+.minHeight {
+  min-height: calc(100vh - 350px - 57px - 88px);
+}
 .food {
   padding: 10px 40px;
   border-radius: 20px;
@@ -41,7 +45,6 @@
   justify-content: flex-start;
   padding: 16px 0;
   background: #fefefe;
-  margin-bottom: 170px;
 }
 .cardFood2 .card {
   margin-left: 26px;
