@@ -116,5 +116,8 @@ header {
   align-items: center;
   margin-left: 20px;
 }
-
+.login a {
+  text-decoration: none;
+  color: #f17228;
+}
 /* Section => slider */

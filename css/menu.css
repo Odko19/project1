@@ -18,7 +18,8 @@
   color: black;
 }
 
-.food:active {
+.food.current,
+.food:hover {
   background: #f17228;
   color: white;
 }
@@ -40,6 +41,7 @@
   justify-content: flex-start;
   padding: 16px 0;
   background: #fefefe;
+  margin-bottom: 170px;
 }
 .cardFood2 .card {
   margin-left: 26px;

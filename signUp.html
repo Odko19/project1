@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/singUp.css" />
   </head>
   <body>
     <header>
@@ -53,7 +54,7 @@
     <section>
       <div id="container">
         <div class="loginFirst">
-          <h3>Нэвтрэх</h3>
+          <h3>Бүртгүүлэх</h3>
           <form action="">
             <div class="form-group">
               <label for="email">И-мэйл</label>
@@ -72,20 +73,24 @@
                 placeholder="Нууц үгээ оруулна уу. "
               />
             </div>
-            <p class="passText">
-              <a href="./forgetPass.html"> Нууц үгээ мартсан?</a>
-            </p>
+
+            <div class="form-group">
+              <label for="password">Нууц үг давтах</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Нууц үг давтах "
+              />
+            </div>
+            <div class="form-group1">
+              <input type="checkbox" id="checkbox1" name="checkbox1" />
+              <label for="checkbox1"> Үйлчилгээний нөхцөл зөвшөөрөх</label>
+            </div>
 
             <!-- btn -->
+
             <div class="form-group">
-              <!-- <label for="btn">Нэвтрэх</label> -->
-              <input type="button" id="btn" value="Нэвтрэх" />
-            </div>
-            <p class="orText">эсвэл</p>
-            <div class="form-group">
-              <a href="./signUp.html">
-                <input type="button" id="btn" value="Бүртгүүлэх " />
-              </a>
+              <input type="button" id="btn" value="Бүртгүүлэх " />
             </div>
           </form>
         </div>
