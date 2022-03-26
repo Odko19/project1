@@ -1,6 +1,4 @@
 /* Section => Slider  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 
 * {
   padding: 0;
@@ -23,13 +21,13 @@
   align-items: center;
 }
 
-.content .content-image .image2 {
+.content-image .image2 {
   position: relative;
   width: 305px;
   height: 370px;
   z-index: 1;
 }
-.content .content-image .image3 {
+.content-image .image3 {
   width: 345px;
   height: 310px;
   z-index: 2;
@@ -38,21 +36,23 @@
   position: absolute;
 }
 
-.content .content-info {
+.content-info {
   display: flex;
   align-items: center;
 }
 
-.content .content-info .content-text h1 {
+.content-text h1 {
   font-size: 55px;
   text-align: right;
   color: #f17228;
-  letter-spacing: 0.01em;
-  margin-bottom: 10px;
-  font-family: "Poppins", sans-serif;
+  margin-bottom: 24px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90%;
 }
 
-.content .content-info .content-text p {
+.content-text p {
   text-align: right;
   font-weight: 700;
   font-size: 22px;
@@ -64,10 +64,11 @@
 }
 hr {
   border: 1px solid #f17228;
+  background-color: #f17228;
 }
 /* more */
 
-.content-info .bullet .arrow {
+.bullet .arrow {
   padding: 15px 25px;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 0px 10px rgba(251, 197, 166, 0.2);
@@ -100,4 +101,64 @@ hr {
   height: 8px;
   background: #f17228;
   transition: width 2s;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bullet {
+    display: none;
+  }
+  .content {
+    height: 380px;
+  }
+  .content-image {
+    display: flex;
+    align-items: center;
+  }
+  .content-image .image2 {
+    width: 246px;
+    z-index: 1;
+  }
+  .content-image .image3 {
+    width: 246px;
+    z-index: 2;
+    margin-top: 0vw;
+    margin-left: 10vw;
+    position: absolute;
+  }
+
+  /* Title */
+  .content-text h1 {
+    font-size: 55px;
+    text-align: right;
+    color: #f17228;
+    margin-bottom: 15px;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 90%;
+  }
+
+  .content-text p {
+    text-align: right;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    margin-top: 9px;
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 700;
+  }
+  /* pagination */
+
+  .pagination span {
+    /* width: 21px;
+    height: 8px; */
+    width: 10px;
+    height: 8px;
+    margin: 5px;
+    background: #fbc5a6;
+    border-radius: 5px;
+    margin-bottom: 32px;
+    transition: width 2s;
+  }
 }

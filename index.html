@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/card.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/panel.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +24,7 @@
   </head>
   <body>
     <header>
-      <div id="container">
+      <div class="container">
         <div id="home">
           <div class="logo">
             <div class="image">
@@ -40,14 +39,16 @@
               <li><a href="./deliveryZone.html">Хүргэлтийн бүс</a></li>
             </ul>
           </div>
+          <!-- <div class="search-box"> -->
           <div class="search-box">
             <input
               type="text"
               class="search"
               id="image2"
-              placeholder=" Хайх "
+              placeholder="       Хайх "
             />
           </div>
+          <!-- </div> -->
           <div class="login-basket">
             <div class="basket">
               <img src="./image/logo/busket icon.svg" alt="" />
@@ -66,7 +67,7 @@
 
     <!-- Section => Slider -->
     <section id="bigcontent">
-      <div id="container">
+      <div class="container">
         <div class="content">
           <div class="content-image">
             <div class="image2">
@@ -106,7 +107,7 @@
 
     <!-- Category Label -->
     <section id="InfoPanel">
-      <div id="container">
+      <div class="container">
         <div class="content-Panel">
           <div class="panel">
             <div class="image6">
@@ -141,76 +142,74 @@
 
     <!--  Хямдралтай-->
     <section>
-      <div id="container">
-        <div class="content-Food">
-          <div class="saleFood">
-            <h2> Хямдралтай</h2>
-            <div class="Button">
-              <input
-                type="button"
-                id="btn"
-                name="fav_language"
-                value="Бүгдийг харах   &#62;"
-              />
+      <div class="content-Food container">
+        <div class="saleFood">
+          <h2> Хямдралтай</h2>
+          <div class="Button">
+            <input
+              type="button"
+              id="btn"
+              name="fav_language"
+              value="Бүгдийг харах   &#62;"
+            />
+          </div>
+        </div>
+        <div class="cardFood">
+          <!-- card 1 -->
+          <div class="card">
+            <div id="cardPic">
+              <p>30%</p>
+              <img src="./image/3.jpg" alt="" />
+            </div>
+            <div class="cardCost">
+              <h5>Зайрмаг</h5>
+              <p>
+                <span class="c1"> 4,760₮ </span>
+                <span class="line"> 6800₮ </span>
+              </p>
             </div>
           </div>
-          <div class="cardFood">
-            <!-- card 1 -->
-            <div class="card">
-              <div id="cardPic">
-                <p>30%</p>
-                <img src="./image/3.jpg" alt="" />
-              </div>
-              <div class="cardCost">
-                <h5>Зайрмаг</h5>
-                <p>
-                  <span class="c1"> 4,760₮ </span>
-                  <span class="line"> 6800₮ </span>
-                </p>
-              </div>
-            </div>
 
-            <!-- card 2 -->
-            <div class="card">
-              <div id="cardPic">
-                <p>20%</p>
-                <img src="./image/4.jpg" alt="" />
-              </div>
-              <div class="cardCost">
-                <h5>Панкейк</h5>
-                <p>
-                  <span class="c1"> 4800₮ </span>
-                  <span class="line"> 6800₮ </span>
-                </p>
-              </div>
+          <!-- card 2 -->
+          <div class="card">
+            <div id="cardPic">
+              <p>20%</p>
+              <img src="./image/4.jpg" alt="" />
             </div>
-            <!-- card 3 -->
-            <div class="card">
-              <div id="cardPic">
-                <p>20%</p>
-                <img src="./image/5.jpg" alt="" />
-              </div>
-              <div class="cardCost">
-                <h5>Өглөөний хоол</h5>
-                <p>
-                  <span class="c1"> 4800₮ </span>
-                  <span class="line"> 6800₮ </span>
-                </p>
-              </div>
+            <div class="cardCost">
+              <h5>Панкейк</h5>
+              <p>
+                <span class="c1"> 4800₮ </span>
+                <span class="line"> 6800₮ </span>
+              </p>
             </div>
-            <!-- card 4 -->
-            <div class="card">
-              <div id="cardPic">
-                <p>20%</p>
-                <img src="./image/6.jpg" alt="" />
-              </div>
-              <div class="cardCost">
-                <h5>Банана сендвич</h5>
-                <p>
-                  <span class="c1"> 4,800₮ </span>
-                  <span class="line"> 6800₮ </span>
-                </p>
-              </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card">
+            <div id="cardPic">
+              <p>20%</p>
+              <img src="./image/5.jpg" alt="" />
+            </div>
+            <div class="cardCost">
+              <h5>Өглөөний хоол</h5>
+              <p>
+                <span class="c1"> 4800₮ </span>
+                <span class="line"> 6800₮ </span>
+              </p>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="card">
+            <div id="cardPic">
+              <p>20%</p>
+              <img src="./image/6.jpg" alt="" />
+            </div>
+            <div class="cardCost">
+              <h5>Банана сендвич</h5>
+              <p>
+                <span class="c1"> 4,800₮ </span>
+                <span class="line"> 6800₮ </span>
+              </p>
             </div>
           </div>
         </div>
@@ -219,7 +218,7 @@
 
     <!-- Үндсэн хоол -->
     <section>
-      <div id="container">
+      <div class="container">
         <div class="content-Food">
           <div class="saleFood">
             <h2> Үндсэн хоол</h2>
@@ -282,7 +281,7 @@
     <!-- Салад ба зууш -->
 
     <section>
-      <div id="container">
+      <div class="container">
         <div class="content-Food">
           <div class="saleFood">
             <h2> Салад ба зууш</h2>
@@ -298,11 +297,11 @@
           <div class="cardFood">
             <!-- card 1 -->
             <div class="card">
-              <div id="cardPic overlay">
-                <img src="./image/8.png" alt="" />
+              <div id="cardPic">
+                <img src="./image/9.png" alt="" />
               </div>
               <div class="cardCost">
-                <h5>Детокс салад</h5>
+                <h5>Кобб салад</h5>
                 <p class="c1">6,800₮</p>
               </div>
             </div>
@@ -345,7 +344,7 @@
     <!-- Амттан -->
 
     <section style="margin-bottom: 260px">
-      <div id="container">
+      <div class="container">
         <div class="content-Food">
           <div class="saleFood">
             <h2> Амттан</h2>
@@ -407,7 +406,7 @@
 
     <!-- Footer -->
     <footer>
-      <div id="container">
+      <div class="container">
         <div class="contentFooder">
           <div class="logo">
             <div class="image">

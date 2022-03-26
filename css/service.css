@@ -1,5 +1,8 @@
 .service {
-  margin-bottom: 50px;
+  padding: 50px 0;
+}
+.minHeight {
+  min-height: calc(100vh - 350px - 57px);
 }
 .service h4 {
   font-family: "Poppins";
@@ -9,7 +12,6 @@
   line-height: 27px;
   border-left: 15px solid #f17228;
   padding: 0 10px;
-  margin: 33px 0;
 }
 .service p {
   font-family: "Poppins";
@@ -17,4 +19,5 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  margin-top: 33px;
 }
