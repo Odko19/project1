@@ -70,3 +70,12 @@ label {
 }
 
 /* footer */
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .loginFirst {
+    max-width: 340px;
+    margin: auto;
+    min-height: calc(100vh - 350px - 57px);
+    padding: 50px 0;
+  }
+}

@@ -12,16 +12,36 @@
   border-left: 10px solid #f17228;
   align-self: center;
   font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
 }
-
-#btn {
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #f17228;
   width: 180px;
-  height: 100%;
-  padding: 15px;
+  height: 48px;
+  padding: 15px 0;
   color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
+}
+.Button label {
+  font-size: 25px;
+  margin-left: 15px;
+}
+#btn {
+  background: none;
+  color: white;
   border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
 }
 #btn:active {
   background-color: red;
@@ -39,20 +59,26 @@
   width: 282px;
   border-radius: 20px;
   padding: 15px 15px;
-  margin-right: 10px;
+  margin-right: 20px;
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
 }
-
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#cardPic img:hover {
+  opacity: 0.5;
+}
 #cardPic img {
   height: 208px;
   width: 252px;
   border-radius: 8px;
+  opacity: 1;
 }
 #cardPic p {
   position: absolute;
   display: flex;
-  margin-left: 185px;
+  margin-left: 187px;
   background: #f17228;
   padding: 12px 18px;
   color: white;
@@ -84,10 +110,77 @@
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
+  .Button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: none;
+    width: 180px;
+    height: 48px;
+    padding: 15px 0;
+    color: none;
+    box-shadow: none;
+    border-radius: none;
+  }
+  .Button label {
+    font-size: 25px;
+    margin-left: 15px;
+    color: #f17228;
+    font-weight: 900;
+  }
+  #btn {
+    display: none;
+  }
+
   .cardFood {
     display: flex;
     justify-content: space-between;
     padding: 26px 0;
     background: #fefefe;
+  }
+
+  /* card */
+  .card {
+    width: 160px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 0px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  #cardPic img {
+    width: 140px;
+    height: 132px;
+    border-radius: 8px;
+  }
+  #cardPic p {
+    position: absolute;
+    display: flex;
+    margin-left: 75px;
+    background: #f17228;
+    padding: 12px 18px;
+    color: white;
+    border-radius: 0px 8px 0px 20px;
+  }
+
+  .cardCost {
+    padding: 0 10px;
+  }
+  .cardCost h5 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 4px;
+  }
+  .cardCost p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
   }
 }

@@ -50,3 +50,21 @@
 .cardFood2 .card:first-child {
   margin-left: 0px;
 }
+@media (min-width: 768px) and (max-width: 1200px) {
+  .foodOption {
+    display: flex;
+    padding: 20px 0;
+    height: 88px;
+    justify-content: space-between;
+  }
+
+  .food a {
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #fbc5a6;
+    margin-left: 0px;
+    text-decoration: none;
+    color: black;
+  }
+}

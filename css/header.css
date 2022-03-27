@@ -127,6 +127,11 @@ header {
 /* Section => slider */
 
 @media (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    max-width: 834px;
+    margin: auto;
+  }
+
   /* logo */
   .image {
     width: 30px;
@@ -150,8 +155,9 @@ header {
   }
   .login-basket {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
+
   .basket p {
     display: none;
   }
@@ -159,19 +165,18 @@ header {
     display: none;
   }
   .login {
-    margin-left: 0px;
+    margin-left: 21px;
   }
 
   #home input[type="text"] {
-    border: 1px solid #fbc5a6;
     width: 45px;
     transition: width 0.4s ease-in-out;
-    border: 10px solid white;
+    border: 1px solid white;
   }
   #image2 {
     background-image: url(../image/logo/search\ icon.svg);
     background-repeat: no-repeat;
-    background-position: 10% 50%;
+    background-position: 100% 50%;
   }
   #home input[type="text"]:focus {
     /* max-width: 300px; */
