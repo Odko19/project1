@@ -16,24 +16,9 @@
   justify-content: space-between;
 }
 
-.content-image {
-  display: flex;
-  align-items: center;
-}
-
-.content-image .image2 {
-  position: relative;
-  width: 305px;
-  height: 370px;
-  z-index: 1;
-}
-.content-image .image3 {
-  width: 345px;
-  height: 310px;
-  z-index: 2;
-  margin-top: 1vw;
-  margin-left: 8vw;
-  position: absolute;
+.content-image img {
+  width: 588px;
+  height: 450px;
 }
 
 .content-info {
@@ -103,27 +88,20 @@ hr {
   transition: width 2s;
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .bullet {
     display: none;
   }
   .content {
     height: 380px;
   }
-  .content-image {
-    display: flex;
-    align-items: center;
+  .content-image img {
+    width: 430px;
+    height: 300.51px;
   }
-  .content-image .image2 {
-    width: 246px;
-    z-index: 1;
-  }
-  .content-image .image3 {
-    width: 246px;
-    z-index: 2;
-    margin-top: 0vw;
-    margin-left: 10vw;
-    position: absolute;
+
+  .content-info {
+    margin-right: 67px;
   }
 
   /* Title */
@@ -160,5 +138,60 @@ hr {
     border-radius: 5px;
     margin-bottom: 32px;
     transition: width 2s;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    display: flex;
+    align-items: center;
+    height: 250px;
+    justify-content: space-between;
+  }
+
+  .content-image img {
+    width: 230.13px;
+    height: 181.95px;
+  }
+  .content-info {
+    margin-right: 0px;
+  }
+  .content-text h1 {
+    text-align: right;
+    color: #f17228;
+    margin-bottom: 24px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+  }
+
+  .content-text p {
+    text-align: right;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 120%;
+    margin-top: 10px;
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 700;
+  }
+  .pagination span {
+    /* width: 21px;
+    height: 8px; */
+    width: 10px;
+    height: 8px;
+    margin: 5px;
+    background: #fbc5a6;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    transition: width 2s;
+  }
+  hr {
+    display: none;
+  }
+  .bullet {
+    display: none;
   }
 }

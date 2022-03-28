@@ -67,4 +67,7 @@
     text-decoration: none;
     color: black;
   }
+  .minHeight {
+    min-height: calc(100vh - 350px - 57px - 88px);
+  }
 }

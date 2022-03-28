@@ -112,7 +112,13 @@ header {
   height: 41px;
   align-items: center;
 }
-
+a {
+  text-decoration: none;
+}
+/* threeLIne */
+.menuLine {
+  display: none;
+}
 /* login */
 .login {
   display: flex;
@@ -126,9 +132,10 @@ header {
 }
 /* Section => slider */
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .container {
-    max-width: 834px;
+    width: 95vw;
+    padding: 2px;
     margin: auto;
   }
 
@@ -182,5 +189,58 @@ header {
     /* max-width: 300px; */
     width: 200px;
     transition: width 1s;
+  }
+}
+
+@media (max-width: 768px) {
+  /* threeLIne */
+
+  .menuLine {
+    display: block;
+  }
+  .image {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+  }
+  .logo h3 {
+    justify-content: center;
+    align-self: center;
+    color: #f17228;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  #home input[type="text"] {
+    width: 45px;
+    transition: width 0.4s ease-in-out;
+    border: 1px solid white;
+  }
+  #image2 {
+    background-image: url(../image/logo/search\ icon.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+  }
+  #home input[type="text"]:focus {
+    /* max-width: 300px; */
+    width: 150px;
+    transition: width 1s;
+  }
+  .basket {
+    display: none;
+  }
+  .login-basket {
+    display: flex;
+    justify-content: flex-end;
+    width: 00px;
+  }
+  .login-basket p {
+    display: none;
+  }
+
+  .menu {
+    display: none;
   }
 }

@@ -77,12 +77,89 @@ footer {
   text-align: center;
   margin-top: 10px;
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .textFooder p:last-child {
     margin-left: 35px;
     line-height: 1.2em;
   }
   .textFooder p:nth-last-child(2) {
     margin-left: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    background: url(../image/base.png) no-repeat center center/cover;
+    padding: 24px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 511px;
+  }
+
+  .contentFooder {
+    display: block;
+    justify-content: none;
+    margin-bottom: none;
+  }
+  .footerMenu {
+    columns: 2;
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+
+  .footerMenu p {
+    color: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .underline {
+    text-decoration-line: none;
+    font-weight: 900;
+  }
+  .footerMenu a {
+    color: white;
+    text-decoration-line: none;
+  }
+  .socialFooder {
+    display: block;
+    justify-content: none;
+    color: white;
+    border-top: none;
+  }
+  .iconFooder {
+    border-bottom: 2px solid white;
+  }
+
+  .iconFooder .icon {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  .iconFooder p {
+    display: none;
+  }
+  .textFooder {
+    display: block;
+    text-align: left;
+    margin-top: 21px;
+  }
+  .textFooder a {
+    color: white;
+    text-decoration-line: none;
+  }
+  .textFooder p:last-child {
+    margin-left: 0px;
+    line-height: 0em;
+  }
+  .textFooder p:nth-last-child(2) {
+    margin-left: 0px;
+    margin-top: 30px;
+    text-align: right;
+  }
+
+  .textFooder p:last-child {
+    display: none;
   }
 }
