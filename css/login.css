@@ -5,6 +5,13 @@
   padding: 50px 0;
 }
 
+.loginFirst1 {
+  max-width: 370px;
+  margin: auto;
+
+  padding: 50px 0;
+}
+
 .loginFirst h3 {
   text-transform: uppercase;
   border-left: 10px solid #f17228;

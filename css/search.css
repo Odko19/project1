@@ -16,3 +16,7 @@
 .search-box1 .search1 {
   border: 1px solid black;
 }
+
+.search-box input[type="text"]:focus {
+  padding-left: 50px;
+}
