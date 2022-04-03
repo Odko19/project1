@@ -1,0 +1,126 @@
+.foodOption h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  border-left: 10px solid #f17228;
+}
+.load {
+  color: #f17228;
+}
+
+/* Card */
+
+.backshadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  width: 156px;
+  height: 190px;
+}
+.cardImage {
+  width: 136px;
+  height: 120px;
+}
+.card-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+.card-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media (min-width: 768px) {
+  .foodOption h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    border-left: 10px solid #f17228;
+  }
+  /* Card */
+
+  .backshadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    width: 160px;
+    height: 200px;
+  }
+  .cardImage {
+    width: 140px;
+    height: 132px;
+  }
+}
+@media (min-width: 1200px) {
+  .foodOption h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    border-left: 10px solid #f17228;
+  }
+  .Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f17228;
+    width: 180px;
+    height: 48px;
+    padding: 15px 0;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+  }
+  .load {
+    color: white;
+    margin-left: 5px;
+  }
+  #btn {
+    background: none;
+    color: white;
+    border: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  /* card */
+  .backshadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    width: 282px;
+    height: 304px;
+  }
+  .cardImage {
+    width: 252px;
+    height: 208px;
+  }
+
+  .card-title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .card-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}

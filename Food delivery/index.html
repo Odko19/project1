@@ -16,28 +16,406 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/panel.css" />
+    <link rel="stylesheet" href="css/card.css" />
   </head>
   <body>
-    <div class="row">
-      <div class="col">
-        <div class="logo">
-          <img src="image/logo/logo.svg" alt="" />
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg d-flex align-items-center">
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="d-lg-none">
+              <img src="image/logo/.svg" alt="" />
+            </span>
+          </button>
+          <div class="logo d-flex align-items-center">
+            <img src="image/logo/logo.svg" alt="" id="logoHead" />
+            <h4 class="c1 mb-0">Food Delivery</h4>
+          </div>
+          <div class="collapse navbar-collapse ml50" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active text-dark mr-1" href="#"
+                >НҮҮР
+              </a>
+              <a class="nav-item nav-link text-dark mr-1" href="#"
+                >ХООЛНЫ ЦЭС</a
+              >
+              <a class="nav-item nav-link text-dark mr-1" href="#"
+                >ХҮРГЭЛТИЙН БҮС</a
+              >
+            </div>
+          </div>
+          <div class="seLoBus d-flex">
+            <div>
+              <input
+                type="text"
+                class="search d-none d-xl-block"
+                id="image2"
+                placeholder="Хайх "
+              />
+              <img
+                src="image/logo/search icon.svg"
+                alt=""
+                id="searchIcon"
+                class="d-block d-xl-none"
+              />
+            </div>
+            <div class="d-flex busketLogin align-items-center">
+              <img
+                src="image/logo/busket icon.svg"
+                alt=""
+                class="d-none d-lg-block"
+                id="busketIcon"
+              />
+              <p class="m-0 d-none d-xl-block c1">Сагс</p>
+            </div>
+            <div class="d-flex busketLogin align-items-center">
+              <img src="image/logo/user icon.svg" alt="" id="loginIcon" />
+              <p class="m-0 d-none d-xl-block c1">Нэвтрэх</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="bg-image">
+      <div class="container">
+        <div class="conInfo d-flex align-items-center justify-content-between">
+          <img src="./image/food.png" alt="" id="image1" />
+          <div class="textSlider text-end d-flex align-items-center">
+            <div>
+              <h3 class="c1">
+                MStars Food <br />
+                delivery
+              </h3>
+              <hr />
+              <p>
+                Хосгүй амтыг хормын <br />
+                дотор хүргэж өгнө.
+              </p>
+            </div>
+            <div class="bullet d-none d-xl-block">
+              <span class="arrow"> &rarr; </span>
+            </div>
+          </div>
+          <!-- pagination -->
+        </div>
+        <div class="pagination clearfix">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
-      <div class="col"></div>
-      <div class="col"></div>
-    </div>
-    <div class="row">
-      <div class="col"></div>
-    </div>
-    <div class="row">
-      <div class="col"></div>
-    </div>
-    <div class="row">
-      <div class="col"></div>
-    </div>
-    <div class="row">
-      <div class="col"></div>
-    </div>
+    </section>
+    <section class="bg1">
+      <div class="container">
+        <div class="row panelShadow justify-content-between">
+          <div class="col-12 col-md-4 py-3 d-flex align-items-center">
+            <div class="panelIcon">
+              <img src="./image/logo/.svg" alt="" />
+            </div>
+            <div class="textPanel">
+              <h5 class="m-0">Шуурхай хүргэлт</h5>
+              <p class="m-0">30 минутанд таны гарт.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 py-3 d-flex align-items-center">
+            <div class="panelIcon">
+              <img src="./image/logo/.svg" alt="" />
+            </div>
+            <div class="textPanel">
+              <h5 class="m-0">Эрүүл баталгаат орц</h5>
+              <p class="m-0">Хамгийн чанартайг танд.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 py-3 d-flex align-items-center">
+            <div class="panelIcon">
+              <img src="./image/logo/.svg" alt="" />
+            </div>
+            <div class="textPanel">
+              <h5 class="m-0">Өргөн сонголт</h5>
+              <p class="m-0">Хамгийн онцгойг танд.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div
+          class="foodOption mt-2 d-flex justify-content-between align-items-center"
+        >
+          <h3 class="m-0"> Хямдралтай</h3>
+          <div class="Button d-flex justify-content-space align-items-center">
+            <input
+              type="button"
+              id="btn"
+              class="d-none d-xl-block"
+              name="fav_language"
+              value="Бүгдийг харах"
+            />
+            <label class="load"> ></label>
+          </div>
+        </div>
+        <div
+          class="cardMore flex-wrap mt-4 d-flex justify-content-between align-items-center"
+        >
+          <div class="card backshadow border-0">
+            <img src="./image/3.jpg" class="cardImage" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title m-0">Макарон</h5>
+              <p class="card-text">
+                <span class="c1">3,800₮</span>
+                <span>6800</span>
+              </p>
+            </div>
+          </div>
+          <div class="card backshadow border-0">
+            <img src="./image/3.jpg" class="cardImage" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title m-0">Макарон</h5>
+              <p class="card-text">
+                <span class="c1">3,800₮</span>
+                <span>6800</span>
+              </p>
+            </div>
+          </div>
+          <div class="card backshadow border-0">
+            <img src="./image/3.jpg" class="cardImage" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title m-0">Макарон</h5>
+              <p class="card-text">
+                <span class="c1">3,800₮</span>
+                <span>6800</span>
+              </p>
+            </div>
+          </div>
+          <div class="card backshadow border-0">
+            <img src="./image/3.jpg" class="cardImage" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title m-0">Макарон</h5>
+              <p class="card-text">
+                <span class="c1">3,800₮</span>
+                <span>6800</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mt-4">
+        <div
+          class="foodOption mt-2 d-flex justify-content-between align-items-center"
+        >
+          <h3 class="m-0"> Хямдралтай</h3>
+          <div class="Button d-flex justify-content-space align-items-center">
+            <input
+              type="button"
+              id="btn"
+              class="d-none d-xl-block"
+              name="fav_language"
+              value="Бүгдийг харах"
+            />
+            <label class="load"> ></label>
+          </div>
+        </div>
+        <div
+          class="cardMore flex-wrap mt-4 d-flex justify-content-between align-items-center"
+        >
+          <div class="card backshadow border-0">
+            <img src="./image/3.jpg" class="cardImage" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title m-0">Макарон</h5>
+              <p class="card-text">
+                <span class="c1">3,800₮</span>
+                <span>6800</span>
+              </p>
+            </div>
+          </div>
+          <div class="card backshadow border-0">
+            <img src="./image/3.jpg" class="cardImage" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title m-0">Макарон</h5>
+              <p class="card-text">
+                <span class="c1">3,800₮</span>
+                <span>6800</span>
+              </p>
+            </div>
+          </div>
+          <div class="card backshadow border-0">
+            <img src="./image/3.jpg" class="cardImage" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title m-0">Макарон</h5>
+              <p class="card-text">
+                <span class="c1">3,800₮</span>
+                <span>6800</span>
+              </p>
+            </div>
+          </div>
+          <div class="card backshadow border-0">
+            <img src="./image/3.jpg" class="cardImage" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title m-0">Макарон</h5>
+              <p class="card-text">
+                <span class="c1">3,800₮</span>
+                <span>6800</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mt-4">
+        <div
+          class="foodOption mt-2 d-flex justify-content-between align-items-center"
+        >
+          <h3 class="m-0"> Хямдралтай</h3>
+          <div class="Button d-flex justify-content-space align-items-center">
+            <input
+              type="button"
+              id="btn"
+              class="d-none d-xl-block"
+              name="fav_language"
+              value="Бүгдийг харах"
+            />
+            <label class="load"> ></label>
+          </div>
+        </div>
+        <div
+          class="cardMore flex-wrap mt-4 d-flex justify-content-between align-items-center"
+        >
+          <div class="card backshadow border-0">
+            <img src="./image/3.jpg" class="cardImage" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title m-0">Макарон</h5>
+              <p class="card-text">
+                <span class="c1">3,800₮</span>
+                <span>6800</span>
+              </p>
+            </div>
+          </div>
+          <div class="card backshadow border-0">
+            <img src="./image/3.jpg" class="cardImage" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title m-0">Макарон</h5>
+              <p class="card-text">
+                <span class="c1">3,800₮</span>
+                <span>6800</span>
+              </p>
+            </div>
+          </div>
+          <div class="card backshadow border-0">
+            <img src="./image/3.jpg" class="cardImage" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title m-0">Макарон</h5>
+              <p class="card-text">
+                <span class="c1">3,800₮</span>
+                <span>6800</span>
+              </p>
+            </div>
+          </div>
+          <div class="card backshadow border-0">
+            <img src="./image/3.jpg" class="cardImage" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title m-0">Макарон</h5>
+              <p class="card-text">
+                <span class="c1">3,800₮</span>
+                <span>6800</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mt-4">
+        <div
+          class="foodOption mt-2 d-flex justify-content-between align-items-center"
+        >
+          <h3 class="m-0"> Хямдралтай</h3>
+          <div class="Button d-flex justify-content-space align-items-center">
+            <input
+              type="button"
+              id="btn"
+              class="d-none d-xl-block"
+              name="fav_language"
+              value="Бүгдийг харах"
+            />
+            <label class="load"> ></label>
+          </div>
+        </div>
+        <div
+          class="cardMore flex-wrap mt-4 d-flex justify-content-between align-items-center"
+        >
+          <div class="card backshadow border-0">
+            <img src="./image/3.jpg" class="cardImage" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title m-0">Макарон</h5>
+              <p class="card-text">
+                <span class="c1">3,800₮</span>
+                <span>6800</span>
+              </p>
+            </div>
+          </div>
+          <div class="card backshadow border-0">
+            <img src="./image/3.jpg" class="cardImage" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title m-0">Макарон</h5>
+              <p class="card-text">
+                <span class="c1">3,800₮</span>
+                <span>6800</span>
+              </p>
+            </div>
+          </div>
+          <div class="card backshadow border-0">
+            <img src="./image/3.jpg" class="cardImage" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title m-0">Макарон</h5>
+              <p class="card-text">
+                <span class="c1">3,800₮</span>
+                <span>6800</span>
+              </p>
+            </div>
+          </div>
+          <div class="card backshadow border-0">
+            <img src="./image/3.jpg" class="cardImage" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title m-0">Макарон</h5>
+              <p class="card-text">
+                <span class="c1">3,800₮</span>
+                <span>6800</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
