@@ -1,0 +1,45 @@
+.bg2 {
+  background: url(../image/yellow.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+
+.footer-text p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+}
+
+.footer-text p a {
+  color: white;
+  text-decoration-line: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.footer-text1 {
+  color: white;
+  text-decoration-line: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+@media (max-width: 700px) {
+  .bor1 {
+    border-bottom: 1px solid white;
+  }
+}
+
+@media (min-width: 700px) {
+  .bor2 {
+    border-top: 1px solid white;
+  }
+}
