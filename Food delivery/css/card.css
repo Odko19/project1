@@ -22,6 +22,7 @@
 .cardImage {
   width: 136px;
   height: 120px;
+  z-index: 1;
 }
 .card-title {
   font-family: "Poppins";
@@ -37,7 +38,26 @@
   font-size: 14px;
   line-height: 21px;
 }
-
+.percent {
+  background: #f17228;
+  padding: 12px 18px;
+  color: white;
+  border-radius: 0px 4px 0px 20px;
+}
+.card .hovver {
+  background-color: rgba(0, 0, 0, 0.466);
+  width: 156px;
+  height: 190px;
+  position: absolute;
+  z-index: 100;
+  margin: -10px;
+  opacity: 0;
+  border-radius: 10px;
+}
+.card .hovver:hover {
+  opacity: 1;
+  transition: opacity 1s;
+}
 @media (min-width: 768px) {
   .foodOption h3 {
     font-family: "Poppins";
@@ -59,6 +79,15 @@
   .cardImage {
     width: 140px;
     height: 132px;
+  }
+  .card .hovver {
+    background-color: rgba(0, 0, 0, 0.466);
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    z-index: 100;
+    margin: -10px;
+    opacity: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -108,7 +137,15 @@
     width: 252px;
     height: 208px;
   }
-
+  .card .hovver {
+    background-color: rgba(0, 0, 0, 0.466);
+    width: 282px;
+    height: 304px;
+    position: absolute;
+    z-index: 100;
+    margin: -15px;
+    opacity: 0;
+  }
   .card-title {
     font-family: "Poppins";
     font-style: normal;
