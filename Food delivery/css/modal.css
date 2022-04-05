@@ -109,7 +109,7 @@
   }
 }
 
-/* Offcanvas */
+/* Offcanvas  new css */
 .offcanvas {
   width: 407px;
 }
@@ -135,6 +135,21 @@
   background: #fff1e9;
   border-radius: 10px;
 }
-.minHeight {
-  min-height: calc(100vh - 600px);
+.flexHeiht {
+  height: 1200px;
+}
+.close {
+  margin-right: 10px;
+}
+@media (min-width: 1200px) {
+  .offcanvas {
+    width: 506px;
+    height: 900px;
+  }
+  .flexHeiht {
+    height: 1200px;
+  }
+  .close {
+    margin-right: 65px;
+  }
 }

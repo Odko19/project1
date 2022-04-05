@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../Food delivery First"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Food delivery"
+  }
+}
