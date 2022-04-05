@@ -1,0 +1,94 @@
+.loginFirst {
+  max-width: 370px;
+  margin: auto;
+  min-height: calc(100vh - 350px - 57px);
+  padding: 50px 0;
+}
+
+.loginFirst1 {
+  max-width: 370px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.loginFirst h3 {
+  text-transform: uppercase;
+  border-left: 10px solid #f17228;
+  padding: 0 0 0 10px;
+  margin-bottom: 25px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.form-group input {
+  width: 100%;
+  border: 1px solid #ffd7bf;
+  border-radius: 16px;
+  height: 40px;
+  padding: 20px 12px;
+}
+label {
+  font-family: "Poppins";
+  line-height: 50px;
+}
+#password {
+  background-image: url(../image/logo/hide.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+.passText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 55px;
+}
+.passText a {
+  text-decoration: none;
+  color: black;
+}
+
+/* btn */
+
+#btn {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  border: 1px solid #f17228;
+  background: white;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+#btn:hover,
+#btn.current {
+  background: #f17228;
+  color: white;
+}
+.orText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 12px;
+  padding: 16px;
+  color: #828282;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+/* footer */
+
+@media (min-width: 768px) {
+  .loginFirst {
+    max-width: 340px;
+    margin: auto;
+    min-height: calc(100vh - 350px - 35px);
+    padding: 50px 0;
+  }
+}

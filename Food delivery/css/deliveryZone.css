@@ -1,0 +1,51 @@
+.deliveryZone {
+  padding: 10px;
+}
+.zoneTitle img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.zoneTitle h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  border-left: 15px solid #f17228;
+  padding: 0 10px;
+}
+/* zoneAddress */
+
+.zoneAddress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.zone {
+  background: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.zone h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  border-left: 15px solid #f17228;
+  padding: 0 10px;
+}
+
+.zone p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}

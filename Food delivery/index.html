@@ -61,13 +61,13 @@
           </div>
           <div class="collapse navbar-collapse ml50" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-item nav-link active text-dark mr-1" href="./html/menu.html"
+              <a class="nav-item nav-link active text-dark mr-1 current" href="#"
                 >НҮҮР
               </a>
-              <a class="nav-item nav-link text-dark mr-1" href="#"
+              <a class="nav-item nav-link text-dark mr-1" href="./html/menu.html"
                 >ХООЛНЫ ЦЭС</a
               >
-              <a class="nav-item nav-link text-dark mr-1" href="#"
+              <a class="nav-item nav-link text-dark mr-1" href="./html/deliveryZone.html"
                 >ХҮРГЭЛТИЙН БҮС</a
               >
             </div>
@@ -93,16 +93,17 @@
                   <p class="m-0 d-none d-xl-block c1">Сагс</p>
                  </div>
             </button>
-
-            <div class="d-flex busketLogin align-items-center">
-              <img src="image/logo/user icon.svg" alt="" id="loginIcon" />
-              <p class="m-0 d-none d-xl-block c1">Нэвтрэх</p>
-            </div>
+            <button id="btn1"  onclick="window.location.href='./html/login.html'">
+               <div class="d-flex busketLogin align-items-center">
+                 <img src="image/logo/user icon.svg" alt="" id="loginIcon" />
+                 <p class="m-0 d-none d-xl-block c1">Нэвтрэх</p>
+               </div>
+             </button>
           </div>
         </nav>
       </div>
     </header>
-    <section class="bg-image">
+    <!-- <section class="bg-image">
       <div class="container">
         <div class="conInfo d-flex align-items-center justify-content-between">
           <img src="./image/food.png" alt="" id="image1" />
@@ -129,6 +130,72 @@
           <span></span>
           <span></span>
         </div>
+      </div>
+    </section> -->
+    <section>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="conInfo bg-image">
+            <div class="carousel-caption ">
+              <div class=" d-flex align-items-center justify-content-between">
+                <img src="./image/food.png" alt="" id="image1" />
+                <div class="textSlider text-end d-flex align-items-center">
+                  <div>
+                    <h3 class="c1">
+                      MStars Food <br>
+                      delivery
+                    </h3>
+                    <hr />
+                    <p>
+                      Хосгүй амтыг хормын <br>
+                      дотор хүргэж өгнө.
+                    </p>
+                  </div>
+                    <!-- <div class="bullet d-none d-xl-block">
+                      <span class="arrow"> &rarr; </span>
+                    </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="conInfo bg-image2">
+              <div class="carousel-caption d-block">
+                <div class=" textSlider1">
+                   <h3 class="c2 text-end">
+                   Сэт хоол <br> гарч эхэллээ.
+                 </h3>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="conInfo bg-image1">
+              <div class="carousel-caption d-block">
+                <div class="textSlider1">
+                  <h3 class="c2 text-end ">
+                   Тун удахгүй
+                 </h3>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
     <section class="bg1">
@@ -191,7 +258,7 @@
                 </button>
               </div>
              <div class="d-flex flex-row-reverse">
-               <p class="position-absolute percent ">
+               <p class="percent position-absolute" >
                  10%
                </p>
                <img src="./image/3.jpg" class="cardImage" alt="..." />
@@ -206,9 +273,13 @@
               </div>
             </div>
             <div class="card backshadow mt-2 border-0">
-              <div class="hovver"></div>
+              <div class="hovver d-flex justify-content-center align-items-center">
+                <button type="button" id="btn1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <img src="./image/logo/4.svg" alt="">
+                </button>
+              </div>
               <div class="d-flex flex-row-reverse">
-                <p class="position-absolute percent ">
+                <p class="percent position-absolute">
                   10%
                 </p>
                 <img src="./image/4.jpg" class="cardImage" alt="..." />
@@ -222,9 +293,13 @@
               </div>
             </div>
             <div class="card backshadow mt-2 border-0">
-              <div class="hovver"></div>
+              <div class="hovver d-flex justify-content-center align-items-center">
+                <button type="button" id="btn1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <img src="./image/logo/4.svg" alt="">
+                </button>
+              </div>
               <div class="d-flex flex-row-reverse">
-                <p class="position-absolute percent ">
+                <p class="percent position-absolute">
                   10%
                 </p>
                 <img src="./image/5.jpg" class="cardImage" alt="..." />
@@ -238,9 +313,13 @@
               </div>
             </div>
             <div class="card backshadow mt-2 border-0">
-              <div class="hovver"></div>
+              <div class="hovver d-flex justify-content-center align-items-center">
+                <button type="button" id="btn1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <img src="./image/logo/4.svg" alt="">
+                </button>
+              </div>
               <div class="d-flex flex-row-reverse">
-                <p class="position-absolute percent ">
+                <p class="percent position-absolute">
                   10%
                 </p>
                 <img src="./image/6.jpg" class="cardImage" alt="..." />
@@ -275,10 +354,16 @@
             <label class="load"> ></label>
           </div>
         </div>
+
         <div
           class="cardMore flex-wrap mt-2 d-flex justify-content-between align-items-center"
         >
           <div class="card backshadow mt-2 border-0">
+            <div class="hovver d-flex justify-content-center align-items-center">
+              <button type="button" id="btn1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="./image/logo/4.svg" alt="">
+              </button>
+            </div>
             <img src="./image/12.png" class="cardImage" alt="..." />
             <div class="card-body">
               <h5 class="card-title m-0">Макарон</h5>
@@ -289,6 +374,11 @@
             </div>
           </div>
           <div class="card backshadow mt-2 border-0">
+              <div class="hovver d-flex justify-content-center align-items-center">
+              <button type="button" id="btn1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="./image/logo/4.svg" alt="">
+              </button>
+            </div>
             <img src="./image/13.png" class="cardImage" alt="..." />
             <div class="card-body">
               <h5 class="card-title m-0">Макарон</h5>
@@ -299,6 +389,11 @@
             </div>
           </div>
           <div class="card backshadow mt-2 border-0">
+              <div class="hovver d-flex justify-content-center align-items-center">
+              <button type="button" id="btn1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="./image/logo/4.svg" alt="">
+              </button>
+            </div>
             <img src="./image/14.png" class="cardImage" alt="..." />
             <div class="card-body">
               <h5 class="card-title m-0">Макарон</h5>
@@ -309,6 +404,11 @@
             </div>
           </div>
           <div class="card backshadow mt-2 border-0">
+              <div class="hovver d-flex justify-content-center align-items-center">
+              <button type="button" id="btn1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="./image/logo/4.svg" alt="">
+              </button>
+            </div>
             <img src="./image/15.png" class="cardImage" alt="..." />
             <div class="card-body">
               <h5 class="card-title m-0">Макарон</h5>
@@ -343,6 +443,11 @@
           class="cardMore flex-wrap mt-2 d-flex justify-content-between align-items-center"
         >
           <div class="card backshadow mt-2 border-0">
+              <div class="hovver d-flex justify-content-center align-items-center">
+              <button type="button" id="btn1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="./image/logo/4.svg" alt="">
+              </button>
+            </div>
             <img src="./image/8.png" class="cardImage" alt="..." />
             <div class="card-body">
               <h5 class="card-title m-0">Макарон</h5>
@@ -353,6 +458,11 @@
             </div>
           </div>
           <div class="card backshadow mt-2 border-0">
+              <div class="hovver d-flex justify-content-center align-items-center">
+              <button type="button" id="btn1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="./image/logo/4.svg" alt="">
+              </button>
+            </div>
             <img src="./image/9.png" class="cardImage" alt="..." />
             <div class="card-body">
               <h5 class="card-title m-0">Макарон</h5>
@@ -363,6 +473,11 @@
             </div>
           </div>
           <div class="card backshadow mt-2 border-0">
+              <div class="hovver d-flex justify-content-center align-items-center">
+              <button type="button" id="btn1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="./image/logo/4.svg" alt="">
+              </button>
+            </div>
             <img src="./image/10.png" class="cardImage" alt="..." />
             <div class="card-body">
               <h5 class="card-title m-0">Макарон</h5>
@@ -373,6 +488,11 @@
             </div>
           </div>
           <div class="card backshadow mt-2 border-0">
+              <div class="hovver d-flex justify-content-center align-items-center">
+              <button type="button" id="btn1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="./image/logo/4.svg" alt="">
+              </button>
+            </div>
             <img src="./image/11.png" class="cardImage" alt="..." />
             <div class="card-body">
               <h5 class="card-title m-0">Макарон</h5>
@@ -407,6 +527,11 @@
           class="cardMore flex-wrap mt-2 d-flex justify-content-between align-items-center"
         >
           <div class="card backshadow mt-2 border-0">
+              <div class="hovver d-flex justify-content-center align-items-center">
+              <button type="button" id="btn1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="./image/logo/4.svg" alt="">
+              </button>
+            </div>
             <img src="./image/4.png" class="cardImage" alt="..." />
             <div class="card-body">
               <h5 class="card-title m-0">Макарон</h5>
@@ -417,6 +542,11 @@
             </div>
           </div>
           <div class="card backshadow mt-2 border-0">
+              <div class="hovver d-flex justify-content-center align-items-center">
+              <button type="button" id="btn1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="./image/logo/4.svg" alt="">
+              </button>
+            </div>
             <img src="./image/5.png" class="cardImage" alt="..." />
             <div class="card-body">
               <h5 class="card-title m-0">Макарон</h5>
@@ -427,6 +557,11 @@
             </div>
           </div>
           <div class="card backshadow mt-2 border-0">
+              <div class="hovver d-flex justify-content-center align-items-center">
+              <button type="button" id="btn1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="./image/logo/4.svg" alt="">
+              </button>
+            </div>
             <img src="./image/6.png" class="cardImage" alt="..." />
             <div class="card-body">
               <h5 class="card-title m-0">Макарон</h5>
@@ -437,6 +572,11 @@
             </div>
           </div>
           <div class="card backshadow mt-2 border-0">
+              <div class="hovver d-flex justify-content-center align-items-center">
+              <button type="button" id="btn1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="./image/logo/4.svg" alt="">
+              </button>
+            </div>
             <img src="./image/7.png" class="cardImage" alt="..." />
             <div class="card-body">
               <h5 class="card-title m-0">Макарон</h5>
@@ -449,6 +589,10 @@
         </div>
       </div>
     </section>
+
+
+
+    
     <footer class="bg2">
       <div class="container">
         <div class="row py-2 py-md-5">
@@ -505,10 +649,10 @@
                 </div>
               </div>
               <div class="col-12 col-md-3 col-lg-2">
-                <p class="m-0 mt-3 footer-text1">Нууцлалын бодлого</p>
+                <p class="m-0 mt-3 footer-text1"><a href="./html/security.html" class="light1"> Нууцлалын бодлого</a></p>
               </div>
               <div class="col-12 col-md-4 text-md-end col-lg-2">
-                <p class="m-0 mt-3 footer-text1">Үйлчилгээний нөхцөл</p>
+                <p class="m-0 mt-3 footer-text1"><a href="./html/service.html" class="light1 "> Үйлчилгээний нөхцөл</a></p>
               </div>
               <div class="col-12 text-end col-lg-4">
                 <p class="m-0 my-3 my-md-1 footer-text1">
@@ -584,7 +728,7 @@
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header p-0 my-2">
            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            <h5 class="text-center">Таны сагс</h5>
+            <h5 class="center m-0">Таны сагс</h5>
         </div>
         <div class="bor4"></div>
         <div class="offcanvas-body p-0">

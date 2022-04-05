@@ -1,0 +1,271 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/deliveryZone.css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="shadow1">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg d-flex align-items-center">
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            onclick="window.location.href='./html/menuPhone.html'"
+          >
+            <span class="d-lg-none">
+              <img src="../image/logo/.svg" alt="" />
+            </span>
+          </button>
+          <div class="logo d-flex align-items-center">
+            <img src="../image/logo/logo.svg" alt="" id="logoHead" />
+            <h4 class="c1 mb-0">Food Delivery</h4>
+          </div>
+          <div class="collapse navbar-collapse ml50" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-item nav-link active text-dark mr-1"
+                href="../index.html"
+                >НҮҮР
+              </a>
+              <a class="nav-item nav-link text-dark mr-1" href="../html/menu.html"
+                >ХООЛНЫ ЦЭС</a
+              >
+              <a class="nav-item nav-link text-dark mr-1 current" href="#"
+                >ХҮРГЭЛТИЙН БҮС</a
+              >
+            </div>
+          </div>
+          <div class="seLoBus d-flex">
+            <div>
+              <input
+                type="text"
+                class="search d-none d-xl-block"
+                id="image2"
+                placeholder="Хайх "
+              />
+              <img
+                src="../image/logo/search icon.svg"
+                alt=""
+                id="searchIcon"
+                class="d-block d-xl-none"
+              />
+            </div>
+            <button
+              id="btn1"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <div class="d-flex busketLogin align-items-center">
+                <img
+                  src="../image/logo/busket icon.svg"
+                  alt=""
+                  class="d-none d-lg-block"
+                  id="busketIcon"
+                />
+                <p class="m-0 d-none d-xl-block c1">Сагс</p>
+              </div>
+            </button>
+
+            <div class="d-flex busketLogin align-items-center">
+              <img src="../image/logo/user icon.svg" alt="" id="loginIcon" />
+              <p class="m-0 d-none d-xl-block c1">Нэвтрэх</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="deliveryZone">
+          <div class="zoneTitle">
+            <img src="../image/map.jpg" alt="" />
+            <h4>Хүргэлтийн бүс дэх хаягууд</h4>
+          </div>
+          <div class="row zoneAddress my-3 m-1 m-xl-0">
+            <div class="col-xl-5  zone my-3 p-2 p-md-5 ">
+              <div>
+                <h4>“А” бүс</h4>
+              </div>
+              <div>
+                <p>Нархан хотхон</p>
+                <p>26-р байр</p>
+                <p>Хоймор хотхон</p>
+                <p>45-р байр</p>
+                <p>44-р байр</p>
+                <p>3-р байр</p>
+                <p>Хоймор хотхон</p>
+                <p>45-р байр</p>
+              </div>
+              <div>
+                <p>Нархан хотхон</p>
+                <p>26-р байр</p>
+                <p>Хоймор хотхон</p>
+                <p>45-р байр</p>
+                <p>44-р байр</p>
+                <p>3-р байр</p>
+                <p>Хоймор хотхон</p>
+                <p>45-р байр</p>
+              </div>
+            </div>
+            <div class="col-xl-5 zone my-3 p-2 p-md-5 ">
+                <div>
+                  <h4>“Б” бүс</h4>
+                </div>
+                <div>
+                  <p>Нархан хотхон</p>
+                  <p>26-р байр</p>
+                  <p>Хоймор хотхон</p>
+                  <p>45-р байр</p>
+                  <p>44-р байр</p>
+                  <p>3-р байр</p>
+                  <p>Хоймор хотхон</p>
+                  <p>45-р байр</p>
+                </div>
+                <div>
+                  <p>Нархан хотхон</p>
+                  <p>26-р байр</p>
+                  <p>Хоймор хотхон</p>
+                  <p>45-р байр</p>
+                  <p>44-р байр</p>
+                  <p>3-р байр</p>
+                  <p>Хоймор хотхон</p>
+                  <p>45-р байр</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg2">
+      <div class="container">
+        <div class="row py-2 py-md-5">
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="logo d-flex align-items-center my-3 my-md-0">
+              <img
+                src="../image/logo/logo.svg"
+                alt=""
+                id="logoHead"
+                class="rounded-circle"
+              />
+              <h4 class="mb-0 c2">Food Delivery</h4>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="footer-text">
+              <p>Нүүр</p>
+              <p>Хоолны цэс</p>
+              <p>Хүргэлтийн бүс</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="footer-text">
+              <p>Холбоо барих</p>
+              <p><a href="tel:"> (976) 77123456</a></p>
+              <p><a href="tel:"> (976) 77123456</a></p>
+            </div>
+          </div>
+          <div class="col-12 mt-5">
+            <div class="row bor2">
+              <div class="col-12 col-md-5 col-lg-4">
+                <div class="d-none d-md-block">
+                  <p class="m-0 mt-3 footer-text1">Бидэнтэй нэгдээрэй</p>
+                </div>
+                <div
+                  class="bor1 d-flex align-items-center justify-content-center justify-content-md-start ms-md-3"
+                >
+                  <img
+                    src="../image/logo/facebook.svg"
+                    class="mb-3 px-1"
+                    alt=""
+                  />
+                  <img
+                    src="../image/logo/instagram.svg"
+                    class="mb-3 px-1"
+                    alt=""
+                  />
+                  <img
+                    src="../image/logo/twitter.svg"
+                    class="mb-3 px-1"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-3 col-lg-2">
+                <p class="m-0 mt-3 footer-text1">
+                  <a href="../security.html" class="light1">
+                    Нууцлалын бодлого</a
+                  >
+                </p>
+              </div>
+              <div class="col-12 col-md-4 text-md-end col-lg-2">
+                <p class="m-0 mt-3 footer-text1">
+                  <a href="./signUp.html" class="light1">
+                    Үйлчилгээний нөхцөл</a
+                  >
+                </p>
+              </div>
+              <div class="col-12 text-end col-lg-4">
+                <p class="m-0 my-3 my-md-1 footer-text1">
+                  © 2020 MStars Foods LLC
+                </p>
+                <p class="m-0 my-3 mt-md-1 d-none d-md-block footer-text1">
+                  Зохиогчийн эрх хуулиар хамгаалагдсан.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -32,6 +32,11 @@
   font-size: 14px;
   line-height: 21px;
 }
+
+.light1 {
+  color: white !important;
+  text-decoration-line: none;
+}
 @media (max-width: 700px) {
   .bor1 {
     border-bottom: 1px solid white;

@@ -11,7 +11,6 @@
 }
 
 /* Card */
-
 .backshadow {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -38,12 +37,15 @@
   font-size: 14px;
   line-height: 21px;
 }
+
 .percent {
-  background: #f17228;
-  padding: 12px 18px;
+  background: rgba(241, 114, 40, 0.7);
+  padding: 10px 15px;
   color: white;
   border-radius: 0px 4px 0px 20px;
+  z-index: 50;
 }
+
 .card .hovver {
   background-color: rgba(0, 0, 0, 0.466);
   width: 156px;

@@ -14,3 +14,9 @@ hr {
   border: 1px solid #f17228;
   background-color: #f17228;
 }
+
+.navbar-nav a:hover,
+a.current {
+  color: #f17228 !important;
+  font-weight: 700;
+}

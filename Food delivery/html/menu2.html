@@ -36,10 +36,9 @@
     <link rel="stylesheet" href="../css/card.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/menu.css" />
-    <link rel="stylesheet" href="../css/modal.css" />
   </head>
   <body>
-    <header>
+    <header class="shadow1">
       <div class="container">
         <nav class="navbar navbar-expand-lg d-flex align-items-center">
           <button
@@ -50,7 +49,7 @@
             aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            onclick="window.location.href='./html/menuPhone.html'"
+            onclick="window.location.href='menuPhone.html'"
           >
             <span class="d-lg-none">
               <img src="../image/logo/.svg" alt="" />
@@ -63,16 +62,16 @@
           <div class="collapse navbar-collapse ml50" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a
-                class="nav-item nav-link active text-dark mr-1 current"
+                class="nav-item nav-link active text-dark mr-1"
                 href="../index.html"
                 >НҮҮР
               </a>
-              <a class="nav-item nav-link text-dark mr-1" href="#"
+              <a class="nav-item nav-link text-dark mr-1 current" href="#"
                 >ХООЛНЫ ЦЭС</a
               >
               <a
                 class="nav-item nav-link text-dark mr-1"
-                href="./deliveryZone.html"
+                href="../html/deliveryZone.html"
                 >ХҮРГЭЛТИЙН БҮС</a
               >
             </div>
@@ -92,29 +91,19 @@
                 class="d-block d-xl-none"
               />
             </div>
-            <button
-              id="btn1"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
-            >
-              <div class="d-flex busketLogin align-items-center">
-                <img
-                  src="../image/logo/busket icon.svg"
-                  alt=""
-                  class="d-none d-lg-block"
-                  id="busketIcon"
-                />
-                <p class="m-0 d-none d-xl-block c1">Сагс</p>
-              </div>
-            </button>
-            <button id="btn1" onclick="window.location.href='./login.html'">
-              <div class="d-flex busketLogin align-items-center">
-                <img src="../image/logo/user icon.svg" alt="" id="loginIcon" />
-                <p class="m-0 d-none d-xl-block c1">Нэвтрэх</p>
-              </div>
-            </button>
+            <div class="d-flex busketLogin align-items-center">
+              <img
+                src="../image/logo/busket icon.svg"
+                alt=""
+                class="d-none d-lg-block"
+                id="busketIcon"
+              />
+              <p class="m-0 d-none d-xl-block c1">Сагс</p>
+            </div>
+            <div class="d-flex busketLogin align-items-center">
+              <img src="../image/logo/user icon.svg" alt="" id="loginIcon" />
+              <p class="m-0 d-none d-xl-block c1">Нэвтрэх</p>
+            </div>
           </div>
         </nav>
       </div>
@@ -124,16 +113,18 @@
       <div class="container">
         <div class="row mx-1 my-3">
           <div class="col-4 col-md-3 col-xl-2 p-0">
-            <p class="food text-center current"><a href="">Үндсэн хоол</a></p>
-          </div>
-          <div class="col-4 col-md-3 col-xl-2 p-0">
             <p class="food text-center">
-              <a href="../html/menu1.html">Салад ба зууш</a>
+              <a href="../html/menu.html">Үндсэн хоол</a>
             </p>
           </div>
           <div class="col-4 col-md-3 col-xl-2 p-0">
             <p class="food text-center">
-              <a href="../html/menu2.html">Амттан</a>
+              <a href="./menu1.html">Салад ба зууш</a>
+            </p>
+          </div>
+          <div class="col-4 col-md-3 col-xl-2 p-0">
+            <p class="food text-center current">
+              <a href="#">Амттан</a>
             </p>
           </div>
           <div class="col-md-3 p-0 d-none d-md-block col-xl-2">
@@ -150,7 +141,7 @@
         <div class="row row-cols-2 row-cols-md-4 g-2 g-lg-3 minHeight">
           <div class="col">
             <div class="card backshadow mt-2 border-0">
-              <img src="../image/12.png" class="cardImage" alt="..." />
+              <img src="../image/4.png" class="cardImage" alt="..." />
               <div class="card-body">
                 <h5 class="card-title m-0">Макарон</h5>
                 <p class="card-text">
@@ -162,7 +153,7 @@
           </div>
           <div class="col">
             <div class="card backshadow mt-2 border-0">
-              <img src="../image/13.png" class="cardImage" alt="..." />
+              <img src="../image/5.png" class="cardImage" alt="..." />
               <div class="card-body">
                 <h5 class="card-title m-0">Макарон</h5>
                 <p class="card-text">
@@ -174,7 +165,7 @@
           </div>
           <div class="col">
             <div class="card backshadow mt-2 border-0">
-              <img src="../image/14.png" class="cardImage" alt="..." />
+              <img src="../image/6.png" class="cardImage" alt="..." />
               <div class="card-body">
                 <h5 class="card-title m-0">Макарон</h5>
                 <p class="card-text">
@@ -186,7 +177,7 @@
           </div>
           <div class="col">
             <div class="card backshadow mt-2 border-0">
-              <img src="../image/15.png" class="cardImage" alt="..." />
+              <img src="../image/7.png" class="cardImage" alt="..." />
               <div class="card-body">
                 <h5 class="card-title m-0">Макарон</h5>
                 <p class="card-text">
@@ -198,67 +189,10 @@
           </div>
           <div class="col">
             <div class="card backshadow mt-2 border-0">
-              <img src="../image/16.png" class="cardImage" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title m-0">Макарон</h5>
-                <p class="card-text">
-                  <span class="c1">3,800₮</span>
-                  <span>6800</span>
-                </p>
+              <div class="d-flex flex-row-reverse">
+                <p class="percent position-absolute">10%</p>
+                <img src="../image/3.jpg" class="cardImage" alt="..." />
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card backshadow mt-2 border-0">
-              <img src="../image/17.png" class="cardImage" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title m-0">Макарон</h5>
-                <p class="card-text">
-                  <span class="c1">3,800₮</span>
-                  <span>6800</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card backshadow mt-2 border-0">
-              <img src="../image/18.png" class="cardImage" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title m-0">Макарон</h5>
-                <p class="card-text">
-                  <span class="c1">3,800₮</span>
-                  <span>6800</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card backshadow mt-2 border-0">
-              <img src="../image/19.png" class="cardImage" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title m-0">Макарон</h5>
-                <p class="card-text">
-                  <span class="c1">3,800₮</span>
-                  <span>6800</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card backshadow mt-2 border-0">
-              <img src="../image/20.png" class="cardImage" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title m-0">Макарон</h5>
-                <p class="card-text">
-                  <span class="c1">3,800₮</span>
-                  <span>6800</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card backshadow mt-2 border-0">
-              <img src="../image/21.png" class="cardImage" alt="..." />
               <div class="card-body">
                 <h5 class="card-title m-0">Макарон</h5>
                 <p class="card-text">
@@ -353,80 +287,5 @@
         </div>
       </div>
     </footer>
-
-    <!-- OffCanvas -->
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header p-0 my-2">
-        <button
-          type="button"
-          class="btn-close text-reset"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-        <h5 class="center m-0">Таны сагс</h5>
-      </div>
-      <div class="bor4"></div>
-      <div class="offcanvas-body p-0">
-        <div class="d-flex align-items-start flex-column flexHeiht">
-          <div class="mb-auto">
-            <div class="row mb-3">
-              <div class="position-absolute d-flex flex-row-reverse">
-                <button
-                  type="button"
-                  class="btn-close close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="col-6">
-                <img src="../image/15.png" class="w-100" alt="" />
-              </div>
-              <div class="col-5">
-                <div class="text1">
-                  <h5 class="m-0">Хулууны зутан</h5>
-                  <p class="m-0">6,800₮</p>
-                </div>
-                <div class="text3 mt-5">
-                  <div
-                    class="d-felx align-items-center justify-content-between"
-                  >
-                    <input
-                      type="button"
-                      name="drone"
-                      value="-"
-                      class="radioButCan"
-                    />
-                    <input
-                      type="button"
-                      name="drone"
-                      value="1"
-                      class="radioButCan1"
-                    />
-                    <input
-                      type="button"
-                      name="drone"
-                      value="+"
-                      class="radioButCan"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="bor3"></div>
-          </div>
-          <div class="w-100">
-            <p class="text-end">Нийт: 6,800₮</p>
-            <button class="btn2 my-3 my-xl-0 mt-xl-3">
-              <p class="m-0">Захиалах</p>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
   </body>
 </html>
