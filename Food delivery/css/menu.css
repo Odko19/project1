@@ -57,6 +57,7 @@
 }
 .bor3 {
   border: 0.1px solid #f2994a;
+  background-color: #f17228;
 }
 @media (min-width: 768px) {
   .food a {

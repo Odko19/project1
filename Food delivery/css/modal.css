@@ -1,0 +1,140 @@
+.modal-body {
+  padding: 20px;
+}
+.radioBut {
+  width: 65px;
+  height: 40px;
+  background-color: #f17228;
+  border-radius: 10px;
+  border: none;
+}
+
+.radioBut1 {
+  width: 300px;
+  height: 40px;
+  border: 0;
+  margin: 0 7px;
+  background: #fff1e9;
+  border-radius: 10px;
+}
+.btn2 {
+  width: 100%;
+  padding: 15px;
+  background: #f17228;
+  border: none;
+}
+.back {
+  background: #f7f8f7;
+  border-radius: 10px;
+  padding: 20px;
+}
+.bor4 {
+  border: 1px solid gray;
+  background-color: gray;
+}
+.text1 h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.text1 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f17228;
+}
+.text2 h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.text2 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #767676;
+}
+.btn2 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.text3 h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+@media (min-width: 900px) {
+  .radioBut1 {
+    width: 600px;
+    height: 40px;
+    border: 0;
+    margin: 0 7px;
+    background: #fff1e9;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .radioBut {
+    width: 50px;
+    height: 40px;
+    background-color: #f17228;
+    border-radius: 10px;
+    border: none;
+  }
+  .radioBut1 {
+    width: 320px;
+    height: 40px;
+    border: 0;
+    margin: 0 7px;
+    background: #fff1e9;
+    border-radius: 10px;
+  }
+}
+
+/* Offcanvas */
+.offcanvas {
+  width: 407px;
+}
+.offcanvas-header {
+  padding: 3px !important;
+}
+.offcanvas-body {
+  padding: 20px !important;
+}
+
+.radioButCan {
+  width: 40px;
+  height: 40px;
+  background-color: #f17228;
+  border-radius: 10px;
+  border: none;
+}
+.radioButCan1 {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  margin: 0 2px;
+  background: #fff1e9;
+  border-radius: 10px;
+}
+.minHeight {
+  min-height: calc(100vh - 600px);
+}

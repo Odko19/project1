@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="css/card.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/model.css">
+    <link rel="stylesheet" href="css/modal.css">
   </head>
   <body>
     <header>
@@ -87,15 +87,13 @@
                 class="d-block d-xl-none"
               />
             </div>
-            <div class="d-flex busketLogin align-items-center">
-              <img
-                src="image/logo/busket icon.svg"
-                alt=""
-                class="d-none d-lg-block"
-                id="busketIcon"
-              />
-              <p class="m-0 d-none d-xl-block c1">Сагс</p>
-            </div>
+            <button id="btn1" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <div class="d-flex busketLogin align-items-center">
+                   <img src="image/logo/busket icon.svg" alt="" class="d-none d-lg-block" id="busketIcon" />
+                  <p class="m-0 d-none d-xl-block c1">Сагс</p>
+                 </div>
+            </button>
+
             <div class="d-flex busketLogin align-items-center">
               <img src="image/logo/user icon.svg" alt="" id="loginIcon" />
               <p class="m-0 d-none d-xl-block c1">Нэвтрэх</p>
@@ -188,10 +186,7 @@
           >
             <div class="card backshadow mt-2 border-0">
               <div class="hovver d-flex justify-content-center align-items-center">
-                <!-- <button id="btn1" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <img src="./image/logo/4.svg" alt="">
-                </button> -->
-                <button type="button" id="btn1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" id="btn1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <img src="./image/logo/4.svg" alt="">
                 </button>
               </div>
@@ -528,84 +523,106 @@
         </div>
       </div>
     </footer>
-
-
-
-  <!-- Model -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" >
-        <div class="modal-content">
-         <div class="row">
-           <div class="col-12 col-xl-6">
-             <img src="./image/16.png" alt="" class="w-100">
-            </div>
-            <div class="col-12 cardModel col-xl-6">
-              <div class="textModel d-flex justify-content-between align-items-center">
-                <h5 class="m-0">
-                  Хулууны зутан
-                </h5>
-                <p class="m-0 c1">
-                  6,800₮
-                </p>
-              </div>
-              <div class="bor4 my-2"></div>
-              <div class="textModel1">
-                <h5>
-                  Орц
-                </h5>
-                <p> 
-                  Хулуу, төмс, лууван , зөөхий, цөцгийн тос, өндөг, самрын үр  
-                </p>
-              </div>
-              <div class="personModel">
-                  <h5>
-                    Хэмжээ
-                  </h5>
-                <div class="row text-center d-flex justify-content-evenly align-items-center">
-                  <div class="col-5 modelBox">
-                      <button id="btn1" type="button" class="butText ">
-                       1 хүн
-                       </button>
+    
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-xl">
+          <div class="modal-content">
+             <div class="modal-body">
+              <div class="row">
+                <div class=" position-absolute d-flex flex-row-reverse ">
+                  <button type="button" class="btn-close me-4" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="col-12 col-xl-6">
+                  <img src="./image/meal.png" class="w-100 h-100" alt="">
+                </div>
+                <div class="col-12 col-xl-5">
+                  <div class="text1 my-3 my-xl-0 mb-xl-3 mText d-flex justify-content-between align-items-center">
+                    <h5 class="m-0">
+                      Хулууны зутан
+                    </h5>
+                    <p class="m-0">
+                      6,800₮
+                    </p>
                   </div>
-                  <div class="col-5 modelBox">
-                    <button id="btn1" type="button" class="butText ">
-                      2 хүн
-                      </button>
+                  <div class="bor4"></div>
+                  <div class="text2 mt-2">
+                    <h5>
+                      Орц
+                    </h5>
+                    <div class="back my-2">
+                      <p>
+                        Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр  
+                      </p>
+                    </div>
+                  </div>
+                  <div class="text3 mt-xl-5">
+                    <h5>
+                      Тоо
+                    </h5>
+                  <div class="d-felx align-items-center justify-content-between">
+                      <input type="button"  name="drone" value="-" class="radioBut " >
+                      <input type="button"  name="drone" value="1" class="radioBut1 " >
+                      <input type="button" name="drone" value="+"  class="radioBut " >
                   </div>
                 </div>
-              </div>
-              <div class="numberModel mt-2">
-                <h5>
-                  Тоо
-                </h5>
-                <div class="row text-center d-flex justify-content-evenly align-items-center">
-                  <div class="col-2 modelBox">
-                    <button id="btn1" type="button" class="butText ">
-                      -
-                      </button>
-                  </div>
-                  <div class="col-6 modelBox">
-                    <button id="btn1" type="button" class="butText ">
-                      2
-                      </button>
-                  </div>
-                  <div class="col-2 modelBox">
-                    <button id="btn1" type="button" class="butText ">
-                     -
+                  <div>
+                    <button class="btn2 my-3 my-xl-0 mt-xl-3">
+                    <p class="m-0">
+                      Сагслах
+                    </p>
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="col-12  modelBox text-center my-3 ">
-                <button id="btn1" type="button" class="butText ">
-                  Сагслах
-                </button>
-              </div>
-            </div>
-            
-         </div>
+           </div>
         </div>
       </div>
     </div>
+
+    <!-- OffCanvas -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header p-0 my-2">
+           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+           <h5 class="text-center">Таны сагс</h5>
+          </div>
+          <div class="bor4"></div>
+        <div class="offcanvas-body p-0">
+    
+          <div class="row mb-3">
+            <div class=" position-absolute d-flex flex-row-reverse ">
+              <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="col-6">
+              <img src="./image/15.png" class="w-100" alt="">
+            </div>
+            <div class="col-5">
+              <div class="text1">
+                <h5 class="m-0">
+                  Хулууны зутан
+                </h5>
+                <p class="m-0">
+                  6,800₮
+                </p>
+              </div>
+              <div class="text3 mt-5">
+                <div class="d-felx align-items-center justify-content-between">
+                  <input type="button"  name="drone" value="-" class="radioButCan " >
+                  <input type="button"  name="drone" value="1" class="radioButCan1 " >
+                  <input type="button" name="drone" value="+"  class="radioButCan " >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bor3"></div>
+
+           <div>
+           <p>
+             lorem
+           </p>
+          </div>
+         </div>
+       </div>
+
   </body>
 </html>
