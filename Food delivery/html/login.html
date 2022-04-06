@@ -33,13 +33,17 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/login.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/modal.css" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/card.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/modalLogin.css" />
+    <link rel="stylesheet" href="../css/singUp.css" />
+    <link rel="stylesheet" href="../css/forgetPass.css" />
   </head>
   <body>
     <header class="shadow1">
@@ -53,7 +57,7 @@
             aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            onclick="window.location.href='./html/menuPhone.html'"
+            onclick="window.location.href='./menuPhone.html'"
           >
             <span class="d-lg-none">
               <img src="../image/logo/.svg" alt="" />
@@ -70,10 +74,14 @@
                 href="../html/menu.html"
                 >НҮҮР
               </a>
-              <a class="nav-item nav-link text-dark mr-1" href="#"
+              <a
+                class="nav-item nav-link text-dark mr-1"
+                href="../html/menu.html"
                 >ХООЛНЫ ЦЭС</a
               >
-              <a class="nav-item nav-link text-dark mr-1" href="#"
+              <a
+                class="nav-item nav-link text-dark mr-1"
+                href="../html/deliveryZone.html"
                 >ХҮРГЭЛТИЙН БҮС</a
               >
             </div>
@@ -111,10 +119,12 @@
               </div>
             </button>
 
-            <div class="d-flex busketLogin align-items-center">
-              <img src="../image/logo/user icon.svg" alt="" id="loginIcon" />
-              <p class="m-0 d-none d-xl-block c1">Нэвтрэх</p>
-            </div>
+            <button id="btn1" onclick="window.location.href='./index.html'">
+              <div class="d-flex busketLogin align-items-center">
+                <img src="../image/logo/user icon.svg" alt="" id="loginIcon" />
+                <p class="m-0 d-none d-xl-block c1">Нэвтрэх</p>
+              </div>
+            </button>
           </div>
         </nav>
       </div>
@@ -245,5 +255,80 @@
         </div>
       </div>
     </footer>
+
+    <!-- OffCanvas -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header p-0 my-2">
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+        <h5 class="center m-0">Таны сагс</h5>
+      </div>
+      <div class="bor4"></div>
+      <div class="offcanvas-body p-0">
+        <div class="d-flex align-items-start flex-column flexHeiht">
+          <div class="mb-auto">
+            <div class="row mb-3">
+              <div class="position-absolute d-flex flex-row-reverse">
+                <button
+                  type="button"
+                  class="btn-close close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="col-6">
+                <img src="../image/15.png" class="w-100" alt="" />
+              </div>
+              <div class="col-5">
+                <div class="text1">
+                  <h5 class="m-0">Хулууны зутан</h5>
+                  <p class="m-0">6,800₮</p>
+                </div>
+                <div class="text3 mt-5">
+                  <div
+                    class="d-felx align-items-center justify-content-between"
+                  >
+                    <input
+                      type="button"
+                      name="drone"
+                      value="-"
+                      class="radioButCan"
+                    />
+                    <input
+                      type="button"
+                      name="drone"
+                      value="1"
+                      class="radioButCan1"
+                    />
+                    <input
+                      type="button"
+                      name="drone"
+                      value="+"
+                      class="radioButCan"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bor3"></div>
+          </div>
+          <div class="w-100">
+            <p class="text-end">Нийт: 6,800₮</p>
+            <button class="btn2 my-3 my-xl-0 mt-xl-3">
+              <p class="m-0">Захиалах</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

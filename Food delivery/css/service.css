@@ -2,7 +2,7 @@
   padding: 50px 0;
 }
 .minHeight {
-  min-height: calc(100vh - 350px - 57px);
+  min-height: calc(100vh - 350px);
 }
 .service h4 {
   font-family: "Poppins";
