@@ -2,7 +2,7 @@
   padding: 20px;
 }
 .radioBut {
-  width: 65px;
+  width: 45px;
   height: 40px;
   background-color: #f17228;
   border-radius: 10px;
@@ -10,7 +10,7 @@
 }
 
 .radioBut1 {
-  width: 300px;
+  width: 218px;
   height: 40px;
   border: 0;
   margin: 0 7px;
@@ -80,9 +80,16 @@
   color: #000000;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
+  .radioBut {
+    width: 65px;
+    height: 40px;
+    background-color: #f17228;
+    border-radius: 10px;
+    border: none;
+  }
   .radioBut1 {
-    width: 600px;
+    width: 550px;
     height: 40px;
     border: 0;
     margin: 0 7px;
@@ -92,15 +99,8 @@
 }
 
 @media (min-width: 1200px) {
-  .radioBut {
-    width: 50px;
-    height: 40px;
-    background-color: #f17228;
-    border-radius: 10px;
-    border: none;
-  }
   .radioBut1 {
-    width: 320px;
+    width: 600px;
     height: 40px;
     border: 0;
     margin: 0 7px;

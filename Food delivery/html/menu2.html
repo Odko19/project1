@@ -36,7 +36,12 @@
     <link rel="stylesheet" href="../css/card.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/modalLogin.css" />
+    <link rel="stylesheet" href="../css/singUp.css" />
+    <link rel="stylesheet" href="../css/forgetPass.css" />
   </head>
   <body>
     <header class="shadow1">
@@ -92,19 +97,35 @@
                 class="d-block d-xl-none"
               />
             </div>
-            <div class="d-flex busketLogin align-items-center">
-              <img
-                src="../image/logo/busket icon.svg"
-                alt=""
-                class="d-none d-lg-block"
-                id="busketIcon"
-              />
-              <p class="m-0 d-none d-xl-block c1">Сагс</p>
-            </div>
-            <div class="d-flex busketLogin align-items-center">
-              <img src="../image/logo/user icon.svg" alt="" id="loginIcon" />
-              <p class="m-0 d-none d-xl-block c1">Нэвтрэх</p>
-            </div>
+            <button
+              id="btn1"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <div class="d-flex busketLogin align-items-center">
+                <img
+                  src="../image/logo/busket icon.svg"
+                  alt=""
+                  class="d-none d-lg-block"
+                  id="busketIcon"
+                />
+                <p class="m-0 d-none d-xl-block c1">Сагс</p>
+              </div>
+            </button>
+
+            <button
+              id="btn1"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="d-flex busketLogin align-items-center">
+                <img src="../image/logo/user icon.svg" alt="" id="loginIcon" />
+                <p class="m-0 d-none d-xl-block c1">Нэвтрэх</p>
+              </div>
+            </button>
           </div>
         </nav>
       </div>
@@ -283,6 +304,343 @@
                   Зохиогчийн эрх хуулиар хамгаалагдсан.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OffCanvas -->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header p-0 my-2">
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+          <h5 class="center m-0">Таны сагс</h5>
+        </div>
+        <div class="bor4"></div>
+        <div class="offcanvas-body p-0">
+          <div class="d-flex align-items-start flex-column flexHeiht">
+            <div class="mb-auto">
+              <div class="row mb-3">
+                <div class="position-absolute d-flex flex-row-reverse">
+                  <button
+                    type="button"
+                    class="btn-close close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="col-6">
+                  <img src="../image/15.png" class="w-100" alt="" />
+                </div>
+                <div class="col-5">
+                  <div class="text1">
+                    <h5 class="m-0">Хулууны зутан</h5>
+                    <p class="m-0">6,800₮</p>
+                  </div>
+                  <div class="text3 mt-5">
+                    <div
+                      class="d-felx align-items-center justify-content-between"
+                    >
+                      <input
+                        type="button"
+                        name="drone"
+                        value="-"
+                        class="radioButCan"
+                      />
+                      <input
+                        type="button"
+                        name="drone"
+                        value="1"
+                        class="radioButCan1"
+                      />
+                      <input
+                        type="button"
+                        name="drone"
+                        value="+"
+                        class="radioButCan"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bor3"></div>
+            </div>
+            <div class="w-100">
+              <p class="text-end">Нийт: 6,800₮</p>
+              <button class="btn2 my-3 my-xl-0 mt-xl-3">
+                <p class="m-0">Захиалах</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-3">
+            <div class="loginFirst2">
+              <button
+                type="button"
+                class="btn-close float-end"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <h3 class="c1">Нэвтрэх</h3>
+              <form action="">
+                <div class="form-group">
+                  <label for="email">И-мэйл</label>
+                  <input
+                    class="mt-2"
+                    type="email"
+                    id="email"
+                    placeholder=" И-мэйл хаягаа оруулна уу. "
+                  />
+                </div>
+
+                <div class="form-group mt-3">
+                  <label for="password">Нууц үг</label>
+                  <input
+                    class="mt-2"
+                    type="password"
+                    id="password"
+                    placeholder="Нууц үгээ оруулна уу. "
+                  />
+                </div>
+              </form>
+              <button
+                id="btn1"
+                class="current float-end"
+                data-bs-target="#exampleModalToggle3"
+                data-bs-toggle="modal"
+              >
+                <p class="passText">Нууц үгээ мартсан?</p>
+              </button>
+
+              <button
+                id="btn"
+                class="current butText"
+                data-bs-target="#exampleModalToggle1"
+                data-bs-toggle="modal"
+              >
+                Нэвтрэх
+              </button>
+
+              <p class="orText">эсвэл</p>
+              <button
+                id="btn"
+                class="butText"
+                data-bs-target="#exampleModalToggle2"
+                data-bs-toggle="modal"
+              >
+                Бүртгүүлэх
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal2 -->
+      <div
+        class="modal fade"
+        id="exampleModalToggle2"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-3">
+            <div class="loginFirst2">
+              <h3>Бүртгүүлэх</h3>
+              <form action="">
+                <div class="form-group">
+                  <label for="email">И-мэйл</label>
+                  <input
+                    class="mt-2"
+                    type="email"
+                    id="email"
+                    placeholder=" И-мэйл хаягаа оруулна уу. "
+                  />
+                </div>
+
+                <div class="form-group mt-3">
+                  <label for="password">Нууц үг</label>
+                  <input
+                    class="mt-2"
+                    type="password"
+                    id="password"
+                    placeholder="Нууц үгээ оруулна уу. "
+                  />
+                </div>
+
+                <div class="form-group mt-3">
+                  <label for="password">Нууц үг давтах</label>
+                  <input
+                    class="mt-2"
+                    type="password"
+                    id="password"
+                    placeholder="Нууц үг давтах "
+                  />
+                </div>
+                <div class="form-group1">
+                  <input type="checkbox" id="checkbox1" name="checkbox1" />
+                  <label for="checkbox1"> Үйлчилгээний нөхцөл зөвшөөрөх</label>
+                </div>
+              </form>
+
+              <!-- btn -->
+              <button
+                id="btn"
+                class="butText current mt-3"
+                data-bs-target="#exampleModal"
+                data-bs-toggle="modal"
+              >
+                Бүртгүүлэх
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal 3 -->
+      <div
+        class="modal fade"
+        id="exampleModalToggle3"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel3"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-3">
+            <div class="loginFirst2">
+              <h3>Нууц үг сэргээх</h3>
+              <form action="">
+                <div class="form-group bo">
+                  <label for="email">И-мэйл</label>
+                  <input
+                    class="mt-2"
+                    type="email"
+                    id="email"
+                    placeholder=" И-мэйл хаягаа оруулна уу. "
+                  />
+                </div>
+              </form>
+
+              <button
+                id="btn"
+                class="butText current mt-5"
+                data-bs-target="#exampleModalToggle4"
+                data-bs-toggle="modal"
+              >
+                Үргэлжлүүлэх
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- model 4 -->
+
+      <div
+        class="modal fade"
+        id="exampleModalToggle4"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel4"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-3">
+            <div class="loginFirst2">
+              <h3>Нууц үг сэргээх</h3>
+              <form action="">
+                <div class="codeSend w350">
+                  <p>
+                    Таны <span class="c3">‘’mstars@example.com’’ </span> хаяг
+                    рүү нууц үг сэргээх код илгээх болно.
+                  </p>
+                </div>
+
+                <div class="form-group mt-3 bo">
+                  <label for="password">Нууц үг сэргээх код </label>
+                  <input
+                    class="mt-2"
+                    type="password"
+                    id="password"
+                    placeholder="Нууц үгээ оруулна уу. "
+                  />
+                </div>
+              </form>
+              <button
+                id="btn"
+                class="butText current mt-5"
+                data-bs-target="#exampleModal"
+                data-bs-toggle="modal"
+              >
+                Үргэлжлүүлэх
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal 5 -->
+      <div
+        class="modal fade"
+        id="exampleModalToggle5"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel5"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-3">
+            <div class="loginFirst2">
+              <h3>Нууц үг зохиох</h3>
+
+              <form action="">
+                <div class="form-group">
+                  <label for="password">Нууц үг </label>
+                  <input
+                    class="mt-2"
+                    type="password"
+                    id="password"
+                    placeholder="Нууц үгээ оруулна уу. "
+                  />s
+                </div>
+
+                <div class="form-group mt-3 bo">
+                  <label for="password">Нууц үг давтах </label>
+                  <input
+                    class="mt-2"
+                    type="password"
+                    id="password"
+                    placeholder="Нууц үгээ оруулна уу. "
+                  />
+                </div>
+
+                <!-- btn -->
+              </form>
+
+              <button
+                id="btn"
+                class="butText current mt-5"
+                data-bs-target="#exampleModal"
+                data-bs-toggle="modal"
+              >
+                Хадгалах
+              </button>
             </div>
           </div>
         </div>
