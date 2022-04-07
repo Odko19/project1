@@ -1,0 +1,31 @@
+.btnAlert {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  border: 1px solid #f17228;
+  background: white;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.btnAlert :hover,
+.btnAlert .current {
+  background: #f17228;
+  color: white;
+}
+#liveAlertPlaceholder {
+  box-shadow: 0px 0px 40px rgba(241, 114, 40, 0.1);
+  border-radius: 20px;
+}
+#phone {
+  background-image: url(../image/logo/pen.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+#name {
+  background-image: url(../image/logo/pen.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
