@@ -17,6 +17,11 @@
 #liveAlertPlaceholder {
   box-shadow: 0px 0px 40px rgba(241, 114, 40, 0.1);
   border-radius: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 140%;
 }
 #phone {
   background-image: url(../image/logo/pen.svg);
