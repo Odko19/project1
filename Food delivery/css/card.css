@@ -9,19 +9,15 @@
 .load {
   color: #f17228;
 }
-
 /* Card */
-.backshadow {
+.card {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  padding: 10px;
-  width: 156px;
-  height: 190px;
+  overflow: hidden;
 }
 .cardImage {
-  width: 136px;
-  height: 120px;
   z-index: 1;
+  width: 100%;
 }
 .card-title {
   font-family: "Poppins";
@@ -37,19 +33,20 @@
   font-size: 14px;
   line-height: 21px;
 }
-
 .percent {
+  top: 0;
+  right: 0;
   background: rgba(241, 114, 40, 0.7);
   padding: 10px 15px;
   color: white;
-  border-radius: 0px 4px 0px 20px;
   z-index: 50;
+  text-align: right;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 20px;
 }
 
 .card .hovver {
   background-color: rgba(0, 0, 0, 0.466);
-  width: 156px;
-  height: 190px;
   position: absolute;
   z-index: 100;
   margin: -10px;
@@ -71,21 +68,16 @@
   }
   /* Card */
 
-  .backshadow {
+  .card {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 10px;
-    width: 160px;
-    height: 200px;
+    overflow: hidden;
   }
   .cardImage {
-    width: 140px;
-    height: 132px;
+    width: 100%;
   }
   .card .hovver {
     background-color: rgba(0, 0, 0, 0.466);
-    width: 160px;
-    height: 200px;
     position: absolute;
     z-index: 100;
     margin: -10px;
@@ -106,8 +98,6 @@
     align-items: center;
     justify-content: center;
     background: #f17228;
-    width: 180px;
-    height: 48px;
     padding: 15px 0;
     color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
@@ -128,21 +118,16 @@
     line-height: 21px;
   }
   /* card */
-  .backshadow {
+  .card {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 15px;
-    width: 282px;
-    height: 304px;
+    overflow: hidden;
   }
   .cardImage {
-    width: 252px;
-    height: 208px;
+    width: 100%;
   }
   .card .hovver {
     background-color: rgba(0, 0, 0, 0.466);
-    width: 282px;
-    height: 304px;
     position: absolute;
     z-index: 100;
     margin: -15px;
