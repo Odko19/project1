@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="process.php">
+      <!-- Text -->
+      <div>
+        <label for="name">нэр</label> <br />
+        <input type="text" id="name" />
+      </div>
+      <br />
+      <!-- Email -->
+      <div>
+        <label for="email">И-мэйл</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="ta email haygaa bichne uu"
+        />
+      </div>
+      <br />
+      <!--  -->
+      <div>
+        <label for="message">Санал сэтгэгдэл</label> <br />
+        <textarea name="message" id="message" cols="20" rows="12"></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="sex">хүйс</label>
+        <select name="sex" id="">
+          <option value="male">Эрэгтэй</option>
+          <br />
+          <option value="female">Эмэгтэй</option>
+        </select>
+      </div>
+      <br />
+      <!-- Age -->
+      <div>
+        <label for="age">Нас</label>
+        <input type="number" name="age" id="age" />
+      </div>
+      <br />
+      <!-- Birhtday -->
+      <div>
+        <label for="birthdate">Төрсөн он, сар, өдөр</label>
+        <input type="date" name="birthdate" id="birthdate" />
+      </div>
+      <br />
+      <!-- radio button ni zowhon negiig songodog  -->
+      <div>
+        <label for="membership">гишүүнчлэл</label><br />
+        <input
+          type="radio"
+          name="membership"
+          value="simple"
+          id="membership"
+          checked
+        />
+        Энгийн
+        <input
+          type="radio"
+          name="membership"
+          value="simple"
+          id="membership"
+        />Стандарт
+        <input
+          type="radio"
+          name="membership"
+          value="simple"
+          id="membership"
+        />VIP
+      </div>
+      <br />
+      <!-- checkbox ni olon songolt songoj boldog -->
+      <div>
+        <label for="hobbies">сонирхол</label><br />
+        <input type="checkbox" name="hobbies" value="music" id="hobbies" /> дуу
+        хөгжим
+        <input type="checkbox" name="hobbies" value="sport" id="hobbies" />спорт
+        <input type="checkbox" name="hobbies" value="movie" id="hobbies" /> кино
+      </div>
+      <br />
+      <!-- button -->
+      <div>
+        <input type="submit" value="бүртгүүлэх" />
+        <button type="submit">илгээх</button>
+      </div>
+    </form>
+  </body>
+</html>
