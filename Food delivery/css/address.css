@@ -1,0 +1,17 @@
+.backh5 {
+  background: #f17228;
+  color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 5px 30px;
+}
+.textH5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+.bor5 {
+  border: 1px solid #f17228;
+}

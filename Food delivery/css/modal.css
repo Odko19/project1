@@ -66,13 +66,6 @@
 
 /* Offcanvas  new css */
 
-.offcanvas-body {
-  padding: 20px !important;
-}
-
-.flexHeiht {
-  height: 50vh;
-}
 .close {
   margin-right: 10px;
 }
@@ -83,4 +76,9 @@
   font-size: 16px;
   text-align: center;
   color: #b6b4b4;
+}
+@media (min-width: 1200px) {
+  .hhh {
+    height: 80vh;
+  }
 }
