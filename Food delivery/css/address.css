@@ -15,3 +15,7 @@
 .bor5 {
   border: 1px solid #f17228;
 }
+.addressIcon {
+  background-image: url(../image/logo/address.svg);
+  background-repeat: no-repeat;
+}
