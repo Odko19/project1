@@ -126,14 +126,24 @@ const cardImage = document.querySelectorAll(".cardImage");
 for (let i = 0; i < food.length; i++) {
   cardTitle[i].innerHTML += food[i].name;
   cardText[i].innerHTML += `${food[i].price}  ${food[i].saleFood}`;
-  cardImage[
-    i
-  ].innerHTML += ` <img src="${food[i].image}" alt="" class="w-100">`;
+  cardImage[i].innerHTML += `<img src="${food[i].image}" alt="" class="w-100">`;
   //[i] => ingej bichij ogch b/gaa ni elementuud maain array-aar orj irj b.ga
 }
 
-let filter111 = food.filter((e) => {
-  let text = food.name;
-  return text;
+const filter111 = food.filter((cardCategory) => {
+  return cardCategory.category == " Амттан";
 });
 console.log(filter111);
+console.log(food);
+
+// Map function ni array dotros propertymuudig ni awch boldog
+// const itemMap = food.map((item) => {
+//   return item.price;
+// });
+// console.log(itemMap);
+
+// find bol nereen ni hailt hiih ym baina
+// const itemFind = food.find((item) => {
+//   return item.name === "Макарон";
+// });
+// console.log(itemFind);
