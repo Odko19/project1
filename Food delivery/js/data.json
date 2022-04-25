@@ -1,0 +1,133 @@
+[
+  {
+    "name": "Зайрмаг",
+    "price": "6800",
+    "saleFood": "4700",
+    "image": "./image/3.jpg",
+    "indiscount": 0,
+    "category": " Хямдралтай"
+  },
+  {
+    "name": "Панкейк",
+    "price": "6800",
+    "saleFood": "4700",
+    "image": "./image/4.jpg",
+    "indiscount": 0,
+    "category": " Хямдралтай"
+  },
+  {
+    "name": "Өглөөний хоол",
+    "price": "6800",
+    "saleFood": "4700",
+    "image": "./image/5.jpg",
+    "category": " Хямдралтай",
+    "indiscount": 0
+  },
+  {
+    "name": "Банана сендвич",
+    "price": "6800",
+    "saleFood": "4700",
+    "image": "./image/6.jpg",
+    "category": " Хямдралтай",
+    "indiscount": 0
+  },
+
+  {
+    "name": "Салмон загас",
+    "price": "6800",
+    "saleFood": "4700",
+    "image": "./image/4.png",
+    "category": " Үндсэн хоол",
+    "indiscount": 0
+  },
+  {
+    "name": "Бөөрөнхий мах",
+    "price": "6800",
+    "saleFood": "4700",
+    "image": "./image/5.png",
+    "category": " Үндсэн хоол",
+    "indiscount": 0
+  },
+  {
+    "name": "Самрын нухаш",
+    "price": "6800",
+    "saleFood": "4700",
+    "image": "./image/6.png",
+    "category": " Үндсэн хоол",
+    "indiscount": 0
+  },
+  {
+    "name": "Чикен бургер",
+    "price": "6800",
+    "saleFood": "4700",
+    "image": "./image/7.png",
+    "category": " Үндсэн хоол",
+    "indiscount": 0
+  },
+
+  {
+    "name": "Детокс салад",
+    "price": "6800",
+    "saleFood": "4700",
+    "image": "./image/8.png",
+    "category": " Салад ба зууш",
+    "indiscount": 0
+  },
+  {
+    "name": "Кобб салад",
+    "price": "6800",
+    "saleFood": "4700",
+    "image": "./image/9.png",
+    "category": " Салад ба зууш",
+    "indiscount": 0
+  },
+  {
+    "name": "Авокадо салад",
+    "price": "6800",
+    "saleFood": "4700",
+    "image": "./image/10.png",
+    "category": " Салад ба зууш",
+    "indiscount": 0
+  },
+  {
+    "name": "Сендвич",
+    "price": "6800",
+    "saleFood": "4700",
+    "image": "./image/11.png",
+    "category": " Салад ба зууш",
+    "indiscount": 0
+  },
+
+  {
+    "name": "Донатс",
+    "price": "6800",
+    "saleFood": "4700",
+    "image": "./image/12.png",
+    "category": " Амттан",
+    "indiscount": 0
+  },
+  {
+    "name": "Орео дессерт",
+    "price": "6800",
+    "saleFood": "4700",
+    "image": "./image/13.png",
+    "category": " Амттан",
+    "indiscount": 0
+  },
+  {
+    "name": "Вафли",
+    "price": "6800",
+    "saleFood": "4700",
+    "image": "./image/14.png",
+    "category": " Амттан",
+    "indiscount": 0
+  },
+  {
+    "name": "Макарон",
+    "price": "6800",
+    "saleFood": "4700",
+    "image": "./image/15.png",
+    "category": " Амттан",
+    "indiscount": 0
+  }
+]

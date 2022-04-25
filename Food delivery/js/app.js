@@ -1,147 +1,66 @@
-const food = [
-  {
-    name: "Зайрмаг",
-    price: "6800",
-    saleFood: "4700",
-    image: "./image/5.png",
-    discount: 30,
-    category: " Хямдралтай",
-  },
-  {
-    name: "Панкейк",
-    price: "6800",
-    saleFood: "4700",
-    image: "./image/4.png",
-    discount: 30,
-    category: " Хямдралтай",
-  },
-  {
-    name: "Өглөөний хоол",
-    price: "6800",
-    saleFood: "4700",
-    image: "./image/5.png",
-    category: " Хямдралтай",
-  },
-  {
-    name: "Банана сендвич",
-    price: "6800",
-    saleFood: "4700",
-    image: "./image/6.png",
-    category: " Хямдралтай",
-  },
+// const cardd = document.querySelector("#disFood");
+// const cardTitle = document.querySelectorAll(".card-title ");
+// const cardText = document.querySelectorAll(".card-text");
+// const cardImage = document.querySelectorAll(".cardImage");
+// const cat = document.querySelectorAll("#aaaa");
+// const cat1 = document.querySelectorAll("#bbbb");
+// //cardImage[i] =>  elementuud array-aar orj irj b.ga
 
-  {
-    name: "Салмон загас",
-    price: "6800",
-    saleFood: "4700",
-    image: "./image/4.png",
-    category: " Үндсэн хоол",
-  },
-  {
-    name: "Бөөрөнхий мах",
-    price: "6800",
-    saleFood: "4700",
-    image: "./image/5.png",
-    category: " Үндсэн хоол",
-  },
-  {
-    name: "Самрын нухаш",
-    price: "6800",
-    saleFood: "4700",
-    image: "./image/6.png",
-    category: " Үндсэн хоол",
-  },
-  {
-    name: "Чикен бургер",
-    price: "6800",
-    saleFood: "4700",
-    image: "./image/7.png",
-    category: " Үндсэн хоол",
-  },
+const select = (arr, con) => {
+  let html = document.querySelector(con);
+  for (let i = 0; i < arr.length; i++) {
+    let food = `
+    <div class="col-md-3">
+    <div class="card mt-2 border-0">
+      <div class="card-body">
+        <div class="position-relative">
+          <p class="position-absolute percent">10%</p>
+          <div class="cardImage">
+            <img src=${arr[i].image} alt="" class="w-100" />
+          </div>
+        </div>
+        <h5 class="card-title mT-2">${arr[i].name}</h5>
+        <p class="card-text">${arr[i].price}</p>
+      </div>
+    </div>
+  </div>`;
+    html.innerHTML += food;
+  }
+};
 
-  {
-    name: "Детокс салад",
-    price: "6800",
-    saleFood: "4700",
-    image: "./image/8.png",
-    category: " Салад ба зууш",
-  },
-  {
-    name: "Кобб салад",
-    price: "6800",
-    saleFood: "4700",
-    image: "./image/9.png",
-    category: " Салад ба зууш",
-  },
-  {
-    name: "Авокадо салад",
-    price: "6800",
-    saleFood: "4700",
-    image: "./image/10.png",
-    category: " Салад ба зууш",
-  },
-  {
-    name: "Сендвич",
-    price: "6800",
-    saleFood: "4700",
-    image: "./image/11.png",
-    category: " Салад ба зууш",
-  },
+const xhrFood = new XMLHttpRequest();
 
-  {
-    name: "Донатс",
-    price: "6800",
-    saleFood: "4700",
-    image: "./image/12.png",
-    category: " Амттан",
-  },
-  {
-    name: "Орео дессерт",
-    price: "6800",
-    saleFood: "4700",
-    image: "./image/13.png",
-    category: " Амттан",
-  },
-  {
-    name: "Вафли",
-    price: "6800",
-    saleFood: "4700",
-    image: "./image/14.png",
-    category: " Амттан",
-  },
-  {
-    name: "Макарон",
-    price: "6800",
-    saleFood: "4700",
-    image: "./image/15.png",
-    category: " Амттан",
-  },
-];
+xhrFood.onreadystatechange = function () {
+  if (this.readyState === 4 && this.status === 200) {
+    const datas = JSON.parse(this.responseText);
+    // json gedeg ni obyect bolgoj awch baigaa
+    const desert = datas.filter((cardCategory) => {
+      return cardCategory.category == " Амттан";
+    });
+    const discount = datas.filter((cardCategory) => {
+      return cardCategory.category == " Хямдралтай";
+    });
+    const snacks = datas.filter((cardCategory) => {
+      return cardCategory.category == " Салад ба зууш";
+    });
+    const basic = datas.filter((cardCategory) => {
+      return cardCategory.category == " Үндсэн хоол";
+    });
+    select(discount, "#disFood");
+    select(basic, "#basedFood");
+    select(snacks, "#snackFood");
+    select(desert, "#dessertFood");
+  }
+};
 
-const cardd = document.querySelectorAll(".card");
-const cardTitle = document.querySelectorAll(".card-title ");
-const cardText = document.querySelectorAll(".card-text");
-const cardImage = document.querySelectorAll(".cardImage");
-
-for (let i = 0; i < food.length; i++) {
-  cardTitle[i].innerHTML += food[i].name;
-  cardText[i].innerHTML += `${food[i].price}  ${food[i].saleFood}`;
-  cardImage[i].innerHTML += `<img src="${food[i].image}" alt="" class="w-100">`;
-  //[i] => ingej bichij ogch b/gaa ni elementuud maain array-aar orj irj b.ga
-}
-
-const filter111 = food.filter((cardCategory) => {
-  return cardCategory.category == " Амттан";
-});
-console.log(filter111);
-console.log(food);
+xhrFood.open("GET", "/js/data.json", true);
+xhrFood.send();
 
 // Map function ni array dotros propertymuudig ni awch boldog
 // const itemMap = food.map((item) => {
 //   return item.price;
 // });
 // console.log(itemMap);
-
 // find bol nereen ni hailt hiih ym baina
 // const itemFind = food.find((item) => {
 //   return item.name === "Макарон";
