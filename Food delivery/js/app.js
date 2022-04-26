@@ -8,7 +8,12 @@
 
 const select = (arr, con) => {
   let html = document.querySelector(con);
-  for (let i = 0; i < arr.length; i++) {
+  // for (let i = 0; i < arr.length; i++) { }
+  // map() function => loop hiideg
+  // array object deer map loop ashigladag
+  // item ni function argument
+  // 2 parameter ogj bolno ter ni indexiin awdag
+  arr.map((item) => {
     let food = `
     <div class="col-md-3">
     <div class="card mt-2 border-0">
@@ -16,16 +21,16 @@ const select = (arr, con) => {
         <div class="position-relative">
           <p class="position-absolute percent">10%</p>
           <div class="cardImage">
-            <img src=${arr[i].image} alt="" class="w-100" />
+            <img src=${item.image} alt="" class="w-100" />
           </div>
         </div>
-        <h5 class="card-title mT-2">${arr[i].name}</h5>
-        <p class="card-text">${arr[i].price}</p>
+        <h5 class="card-title mT-2">${item.name}</h5>
+        <p class="card-text">${item.price}</p>
       </div>
     </div>
   </div>`;
     html.innerHTML += food;
-  }
+  });
 };
 
 const xhrFood = new XMLHttpRequest();
